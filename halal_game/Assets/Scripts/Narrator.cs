@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Narrator : MonoBehaviour
 {
     // singleton
     public static Narrator gameNarrator;
 
+    public Image finishedSentenceIcon;
     public TextMeshProUGUI textComponent;
+    public GameObject chop;
     public string[] lines;
     public float textSpeed;
 
     private int _textIndex;
-    private float _closeTime = 0.75f;
-    private GameObject _chop;
+    private float _closeTime = 0.5f;
+    private bool _chatting = false;
     private Animator _animator;
 
     private void Awake()
@@ -23,36 +26,44 @@ public class Narrator : MonoBehaviour
             gameNarrator = this;
         else if (gameNarrator != this)
             Destroy(gameObject);
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     void Start()
     {
-        _chop = gameObject.transform.GetChild(0).gameObject;
-        _animator = _chop.GetComponent<Animator>();
+        _animator = chop.GetComponent<Animator>();
+        this.gameObject.SetActive(false);
     }
 
     void Update()
     {
-        if (textComponent.text == lines[_textIndex])
+        if (_chatting)
+        #region Either auto-completing lines or going to next line
         {
-            _animator.SetBool("is_talking", false);
+            if (textComponent.text == lines[_textIndex])
+            {
+                finishedSentenceIcon.enabled = true;
+                _animator.SetBool("is_talking", false);
 
-            if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0))
+                {
+                    NextLine();
+                }
+            }
+            else
             {
-                NextLine();
+                if (Input.GetMouseButtonDown(0))
+                {
+                    StopAllCoroutines();
+                    textComponent.text = lines[_textIndex];
+                }
             }
         }
-        else
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[_textIndex];
-            }
-        }
+        #endregion 
     }
 
-    void StartDialogue()
+    public void StartDialogue()
     {
         _textIndex = 0;
         _animator.SetBool("is_talking", true);
@@ -61,6 +72,8 @@ public class Narrator : MonoBehaviour
 
     private IEnumerator TypeOutDialogue()
     {
+        _chatting = true;
+
         foreach (char c in lines[_textIndex].ToCharArray())
         {
             textComponent.text += c;
@@ -72,6 +85,7 @@ public class Narrator : MonoBehaviour
     {
         if (_textIndex < lines.Length - 1)
         {
+            finishedSentenceIcon.enabled = false;
             _animator.SetBool("is_talking", true);
             _textIndex++;
             textComponent.text = string.Empty;
@@ -79,6 +93,7 @@ public class Narrator : MonoBehaviour
         }
         else
         {
+            _chatting = false;
             StartCoroutine(CloseDialogue(_closeTime));
         }
     }
