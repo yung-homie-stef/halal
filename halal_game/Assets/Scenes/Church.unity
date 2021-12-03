@@ -1067,7 +1067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &532998272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1566,6 +1566,12 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!20 &840417498 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6268786116922714612, guid: e90e45ff6cb98a84fb1d909c284ce4f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1150022660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &880769066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 20ced46f1f3d80f448efc21f5bf42890,
@@ -2674,6 +2680,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: virgin_mary
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ca35050d511580a489e0039224af3390,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ca35050d511580a489e0039224af3390,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca35050d511580a489e0039224af3390, type: 3}
 --- !u!4 &1428968022 stripped
@@ -3260,6 +3276,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1551318299}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1760097615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6268786117941654324, guid: e90e45ff6cb98a84fb1d909c284ce4f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1150022660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1760097616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760097615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e22891710d33b84fb35470dd2d9dc05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 840417498}
 --- !u!4 &1796234275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6711807812664807793, guid: d504c8528abfdf843a8faab8cec9aabe,
