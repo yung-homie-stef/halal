@@ -28,7 +28,7 @@ public class Player_Cast : MonoBehaviour
             {
                 objectToInteractWith = playerRaycastHit.transform.gameObject;
 
-                //objectToInteractWith.GetComponent<KeyInteraction>().Activate();
+                objectToInteractWith.GetComponent<Interaction>().Interact();
             }
         }
     }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -94,6 +95,7 @@ public class Narrator : MonoBehaviour
         else
         {
             _chatting = false;
+            Array.Clear(lines, 0, lines.Length);
             StartCoroutine(CloseDialogue(_closeTime));
         }
     }
@@ -101,6 +103,7 @@ public class Narrator : MonoBehaviour
     private IEnumerator CloseDialogue(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
+
         this.gameObject.SetActive(false);
     }
 }
