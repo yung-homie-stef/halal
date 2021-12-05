@@ -11,7 +11,7 @@ public class Player_Cast : MonoBehaviour
     {
         Debug.DrawRay(playerCamera.transform.position, transform.forward, Color.green);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Interact();
         }
