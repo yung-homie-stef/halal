@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 3586397215101418985}
   - component: {fileID: 7731109488748866326}
   - component: {fileID: 8561906580400817450}
+  - component: {fileID: 3815125652746778242}
   m_Layer: 10
   m_Name: carcass_1
   m_TagString: Untagged
@@ -159,6 +160,20 @@ MonoBehaviour:
   - rig: {fileID: 0}
     active: 1
   m_Effectors: []
+--- !u!114 &3815125652746778242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2491577491737631940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1425177a1028bc4f8b10638d886cc1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxValue: 0.85
+  minValue: 1.15
 --- !u!1 &5665741625020646810
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +278,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.8676401, y: -0.0000002514571, z: 0.000000013038516}
+  m_ConnectedAnchor: {x: -0.8676402, y: -0.00000038230792, z: 0.00000011525117}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -489,7 +504,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.54700637, y: 0.00000011920929, z: 0.000000037252903}
+  m_ConnectedAnchor: {x: -0.5470063, y: 0, z: 0.000000007450581}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
