@@ -96,6 +96,8 @@ public class Narrator : MonoBehaviour
         {
             _chatting = false;
             Array.Clear(lines, 0, lines.Length);
+            lines = new string[0];
+            _textIndex = 0;
             StartCoroutine(CloseDialogue(_closeTime));
         }
     }
@@ -104,6 +106,7 @@ public class Narrator : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
 
+        textComponent.text = string.Empty;
         this.gameObject.SetActive(false);
     }
 }
