@@ -9,15 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Opening.unity
     guid: 55734c01162cf6a459ca4daaa1ae50c7
   - enabled: 1
-    path: Assets/Scenes/Init.unity
+    path: Assets/Scenes/Complete/Init.unity
     guid: 421f86acc16645349b937800dc36e072
   - enabled: 1
-    path: Assets/Scenes/Church.unity
+    path: Assets/Scenes/Complete/Church.unity
     guid: 42b4a488a39acfb4ea3cb3a5f5418bcc
   - enabled: 1
-    path: Assets/Scenes/Burbs.unity
-    guid: 5d25e285183f08340b50cd62b69d62e5
-  - enabled: 1
-    path: Assets/Scenes/Hanging.unity
-    guid: 1aa402f94c3b64d46af8f75824f3b2dd
+    path: Assets/Scenes/Paradise.unity
+    guid: 6c57a305c1c0c2f43aec5f31053cea11
   m_configObjects: {}
