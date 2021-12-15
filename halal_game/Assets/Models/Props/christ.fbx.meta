@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: christ
     second: {fileID: 2100000, guid: 2f69578b5e2616f40a48aea097ec2564, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scaffold
+    second: {fileID: 2100000, guid: a64f6c415b9c397448207d8706933938, type: 2}
   materials:
     materialImportMode: 1
     materialName: 1
