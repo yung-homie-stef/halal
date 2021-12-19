@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: 3fa2d3b66b65c804bb23aa152805cb66
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bulkhead_1
+    second: {fileID: 2100000, guid: 5035b91bfbc83434c92a5e1cb96d7de0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bulkhead_2
+    second: {fileID: 2100000, guid: 14ae7203532e50940b6c3f2597417466, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_walls
+    second: {fileID: 2100000, guid: c44c84bd67e369448afc46c4819d7e78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: farm_ramp
+    second: {fileID: 2100000, guid: 0b35e7addeb5fb14ca8bf45f4db78660, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: farm_steps
+    second: {fileID: 2100000, guid: 795b2f9caa1807c4082c636b42e14d1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: farm_walls
+    second: {fileID: 2100000, guid: f7f8632dcacca67468009932f6cf936e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fencing
+    second: {fileID: 2100000, guid: 2c1d0701362d239488a186e2dbc5efcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girder_green
+    second: {fileID: 2100000, guid: 66975dfcbe1a4c64c8f4d73efd8445b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girder_red
+    second: {fileID: 2100000, guid: 4cb30c259dc4b9e43989bab850d3e560, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalworks
+    second: {fileID: 2100000, guid: c234525b475f7f145835937457883105, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outer_farm_walls
+    second: {fileID: 2100000, guid: 7c1049816c23aa14b80c3065f2f0c3fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pipe_plane
+    second: {fileID: 2100000, guid: a224399d4f682814199b2df361ce5fb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plates
+    second: {fileID: 2100000, guid: b8b26c2228945bd4ab562163d324456c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: platforms
+    second: {fileID: 2100000, guid: 594f10c813824bd45ab12962870828f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusty_fence
+    second: {fileID: 2100000, guid: 962d4286bb08ce142891ec1d7336e104, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusty_pipe_1
+    second: {fileID: 2100000, guid: 017cdaf1b603ee849924ad57f67a7feb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusty_pipe_2
+    second: {fileID: 2100000, guid: 87bd22e74b0bede44ba204cca1addff6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusty_pipe_3
+    second: {fileID: 2100000, guid: 78df83e9de0afa64a88c54bf6a136572, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scaffolds
+    second: {fileID: 2100000, guid: 2330352fde1881c4c8e90881572cd3b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: silo
+    second: {fileID: 2100000, guid: 3f325810339181e489aebb609de1d41c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: silo_1
+    second: {fileID: 2100000, guid: 49eb43341b2a0c54bbc68128686851fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: silver_pipes
+    second: {fileID: 2100000, guid: f1e4bf050c0a7cc44bca934f54a1144f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: thin_pipes
+    second: {fileID: 2100000, guid: 7a69ed4654ee5cc44b334747e36f1b7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: thin_silo
+    second: {fileID: 2100000, guid: b977e2466ec26dc48a0661e7662212cc, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

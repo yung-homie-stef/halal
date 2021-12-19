@@ -3,11 +3,16 @@ guid: ffeabfee0527b9f4f90b510f4a3b98aa
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: thin_silo
+    second: {fileID: 2100000, guid: b977e2466ec26dc48a0661e7662212cc, type: 2}
   materials:
     materialImportMode: 1
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

@@ -3,11 +3,16 @@ guid: 82ce8bed4abc64940ad00889e73857e5
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crane
+    second: {fileID: 2100000, guid: b589c87a8e5b2e247b52e498419de85d, type: 2}
   materials:
     materialImportMode: 1
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

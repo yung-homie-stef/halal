@@ -3,11 +3,21 @@ guid: c82d76c2c59e9574881bc1fdbf821493
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalworks
+    second: {fileID: 2100000, guid: c234525b475f7f145835937457883105, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: platforms
+    second: {fileID: 2100000, guid: 594f10c813824bd45ab12962870828f4, type: 2}
   materials:
     materialImportMode: 1
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
