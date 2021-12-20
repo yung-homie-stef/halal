@@ -16,10 +16,11 @@ public class Narrator : MonoBehaviour
     public string[] lines;
     public float textSpeed;
 
-    private int _textIndex;
+    private int _textIndex = 0;
     private float _closeTime = 0.5f;
     private bool _chatting = false;
-    private Animator _animator;
+    private Animator _animator = null;
+    private GameObject pig_textbox = null;
 
     private void Awake()
     {
@@ -34,7 +35,8 @@ public class Narrator : MonoBehaviour
     void Start()
     {
         _animator = chop.GetComponent<Animator>();
-        this.gameObject.SetActive(false);
+        pig_textbox = gameObject.transform.GetChild(0).gameObject;
+        pig_textbox.SetActive(false);
     }
 
     void Update()
@@ -107,6 +109,11 @@ public class Narrator : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         textComponent.text = string.Empty;
-        this.gameObject.SetActive(false);
+        pig_textbox.SetActive(false);
+    }
+
+    public void UnhideDialogue()
+    {
+        pig_textbox.SetActive(true);
     }
 }

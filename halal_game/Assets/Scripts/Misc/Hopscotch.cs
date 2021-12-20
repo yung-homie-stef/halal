@@ -10,22 +10,23 @@ public class Hopscotch : MonoBehaviour
     public FPSController player = null;
 
     private Animator _animator = null;
-    [SerializeField]
-    private float triggerDistance = 0.0f;
 
     private void Start()
     {
         _animator = hopscotch.GetComponent<Animator>();
     }
 
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        float distance = Vector3.Distance(player.transform.position, gameObject.transform.position);
-        Debug.Log(distance);
-
-        if (distance < triggerDistance)
+        if (other.tag == "Player")
+        {
             _animator.SetTrigger("lift");
-        else
-            _animator.SetTrigger("drop");
+        }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        _animator.SetTrigger("drop");
+    }
+
 }

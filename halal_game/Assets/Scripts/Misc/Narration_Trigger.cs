@@ -8,7 +8,7 @@ public class Narration_Trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Narrator.gameNarrator.gameObject.SetActive(true);
+        Narrator.gameNarrator.UnhideDialogue();
 
         if (other.tag == "Player")
         {

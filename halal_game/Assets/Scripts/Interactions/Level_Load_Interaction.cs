@@ -10,6 +10,8 @@ public class Level_Load_Interaction : Interaction
     public override void Interact()
     {
         StartCoroutine(LoadNextLevel(3.0f));
+        Interaction_Label.globalGameLabelSystem.HideInteractionSprite();
+        gameObject.tag = "Untagged";
     }
 
     private IEnumerator LoadNextLevel(float waitTime)
