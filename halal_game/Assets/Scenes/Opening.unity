@@ -487,7 +487,7 @@ MonoBehaviour:
   playerController: {fileID: 0}
   animationTrigger: 
   clip: {fileID: 7400000, guid: 350d0bca546f38047bddbdf9077d7cd6, type: 2}
-  hasLoadingEevent: 1
+  hasLoadingEvent: 1
 --- !u!1 &536553713
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class Level_Loader : MonoBehaviour
         globalSceneLoader = this;
         DontDestroyOnLoad(this.gameObject);
 
-        Load("Church");
+        Load("Burbs");
     }
 
     public void Load(string sceneName)

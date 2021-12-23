@@ -9,7 +9,7 @@ public class Text_Animation : MonoBehaviour
     public FPSController playerController = null;
     public string animationTrigger = null;
     public AnimationClip clip = null;
-    public bool hasLoadingEevent = false;
+    public bool hasLoadingEvent = false;
 
     private Animator _animator = null;
     private float _clipLength = 0.0f;
@@ -26,7 +26,7 @@ public class Text_Animation : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
 
-        if (hasLoadingEevent)
+        if (hasLoadingEvent)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

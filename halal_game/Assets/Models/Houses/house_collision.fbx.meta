@@ -1,53 +1,13 @@
 fileFormatVersion: 2
-guid: 614f7d9e973106644b338f6e3df33709
+guid: 9f6b732724f63fb4288f00cdd35d18c9
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: black_shingles
-    second: {fileID: 2100000, guid: 8ab60527afce9b443b655867390ff42e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: brick_concrete
-    second: {fileID: 2100000, guid: 3eadef0b2941c004bbdce18aa8f0da45, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: carpet
-    second: {fileID: 2100000, guid: 4e2dabc575bdc1e4ca51cfbf1ba52ec3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pink_bricks
-    second: {fileID: 2100000, guid: 198103671701c7646849049567c0f72f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pink_planks
-    second: {fileID: 2100000, guid: 76a18478b98142d41a2349bf653df19f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pink_wood
-    second: {fileID: 2100000, guid: 895858da42bb92341b2ca16f1b27b1a2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wallpaper_2
-    second: {fileID: 2100000, guid: f7c6d306e1a83004aa5e44c8546c0ccf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: white
-    second: {fileID: 2100000, guid: d5d5154bcd917de40a0f5c737f57238c, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
-    materialName: 1
-    materialSearch: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

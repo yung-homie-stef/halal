@@ -17,6 +17,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: carpet
+    second: {fileID: 2100000, guid: 4e2dabc575bdc1e4ca51cfbf1ba52ec3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: pink_bricks
     second: {fileID: 2100000, guid: 198103671701c7646849049567c0f72f, type: 2}
   - first:
@@ -49,6 +54,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: straw_wood
     second: {fileID: 2100000, guid: c66e420ebb3ad6845891a5d3cb7109f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wallpaper_3
+    second: {fileID: 2100000, guid: 83f0b9744383b8d479629012205c0b4d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

@@ -35,5 +35,5 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 256
   colorPrecision:
-    m_OverrideState: 1
-    m_Value: 15.1
+    m_OverrideState: 0
+    m_Value: 16
