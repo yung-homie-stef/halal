@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Level_Loader : MonoBehaviour
 {
     public static Level_Loader globalSceneLoader = null;
+    public string levelName = null;
 
     private void Awake()
     {
@@ -18,7 +19,7 @@ public class Level_Loader : MonoBehaviour
         globalSceneLoader = this;
         DontDestroyOnLoad(this.gameObject);
 
-        Load("Burbs");
+        Load(levelName);
     }
 
     public void Load(string sceneName)
