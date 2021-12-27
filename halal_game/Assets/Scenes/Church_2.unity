@@ -2124,11 +2124,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - cum
-  - cum
-  - cum
-  - cum
-  - cum
+  - 'Welcome, to the Church of Adam''s Rib. We''ve been expecting you, though...
+    perhaps it''s more fitting to say you''ve expected us. '
+  - This intersection is long overdue
+  - Your self-disgust is palpable, seeping out your every pore. I can hear the squeals,
+    it's beautiful. Your kind make for the best lackeys.
+  - The most castrated hound in the kennel, but a dog all the same. Teeth, spittle,
+    stomach, begging to be put to work. I believe we can...
+  - Please, step forward, traverse the doorway between God's legs. She has such sights
+    to show you, and we've only begun to skin the frame.
 --- !u!65 &1100413148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3175,7 +3179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactTextImage: {fileID: 21300000, guid: 5762d649350243f4689e792767d6add4, type: 3}
-  sceneIndex: 0
+  sceneIndex: 4
 --- !u!4 &1570300655 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6971108718824451870, guid: 85ced2e567d47294e80ae5929e072be1,

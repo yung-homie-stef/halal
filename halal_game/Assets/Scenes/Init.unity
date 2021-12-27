@@ -249,7 +249,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: 17}
+  m_AnchoredPosition: {x: 4, y: -61.299988}
   m_SizeDelta: {x: 78.33856, y: 99.2439}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309927171
@@ -408,7 +408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -78.29999}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611964917
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3476e629b0e74d4449c6669aa167b816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Church_2
+  levelName: Church
 --- !u!4 &1522229333
 Transform:
   m_ObjectHideFlags: 0
@@ -763,7 +763,7 @@ RectTransform:
   m_GameObject: {fileID: 1920473327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 41351207}
   - {fileID: 2050452411}
@@ -773,7 +773,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.7, y: -318.7}
+  m_AnchoredPosition: {x: -15.7, y: -397}
   m_SizeDelta: {x: 1464.5952, y: 364.4389}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920473329

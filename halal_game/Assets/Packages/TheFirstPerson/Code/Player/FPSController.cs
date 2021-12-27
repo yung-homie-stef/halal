@@ -308,6 +308,7 @@ namespace TheFirstPerson
 
             controllerInfo = GetInfo();
             ExecuteExtension(ExtFunc.Start);
+
         }
 
         void Update()
