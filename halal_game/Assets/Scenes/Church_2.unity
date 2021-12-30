@@ -465,6 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpeed: 0.85
   maxSpeed: 1.15
+  hasSpeed: 0
 --- !u!95 &145368133
 Animator:
   serializedVersion: 3
@@ -1027,6 +1028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpeed: 0.85
   maxSpeed: 1.15
+  hasSpeed: 0
 --- !u!114 &341861684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,9 +2131,10 @@ MonoBehaviour:
   - This intersection is long overdue
   - Your self-disgust is palpable, seeping out your every pore. I can hear the squeals,
     it's beautiful. Your kind make for the best lackeys.
-  - The most castrated hound in the kennel, but a dog all the same. Teeth, spittle,
-    stomach, begging to be put to work. I believe we can...
-  - Please, step forward, traverse the doorway between God's legs. She has such sights
+  - 'There''s a hunger you possess, burning a hole in your gut. Teeth, spittle, stomach,
+    begging to be put to work. The most castrated hound in the kennel, but a dog
+    all the same. '
+  - Please, step forward, traverse the doorway 'tween God's legs. She has such sights
     to show you, and we've only begun to skin the frame.
 --- !u!65 &1100413148
 BoxCollider:
@@ -2295,6 +2298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpeed: 0.85
   maxSpeed: 1.15
+  hasSpeed: 0
 --- !u!95 &1122359718
 Animator:
   serializedVersion: 3
@@ -3339,6 +3343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpeed: 0.85
   maxSpeed: 1.15
+  hasSpeed: 0
 --- !u!95 &1785138708
 Animator:
   serializedVersion: 3
