@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Init.unity
     guid: 421f86acc16645349b937800dc36e072
   - enabled: 1
-    path: Assets/Scenes/Church.unity
+    path: Assets/Scenes/Titles/T1.unity
     guid: b7815f1e2cb6ca146b126188ffe46f92
   - enabled: 1
     path: Assets/Scenes/Church_2.unity
