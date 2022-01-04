@@ -15,6 +15,7 @@ public class Narrator : MonoBehaviour
     public GameObject chop;
     public string[] lines;
     public float textSpeed;
+    public GameObject blockingObject = null;
 
     private int _textIndex = 0;
     private float _closeTime = 0.5f;
@@ -108,6 +109,10 @@ public class Narrator : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
 
+        if (blockingObject != null)
+        {
+            blockingObject.SetActive(false);
+        }
         textComponent.text = string.Empty;
         pig_textbox.SetActive(false);
     }

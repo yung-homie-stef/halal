@@ -6,6 +6,8 @@ public class Narration_Trigger : MonoBehaviour
 {
     public string[] sentences;
 
+    public GameObject blocker = null;
+
     private void OnTriggerEnter(Collider other)
     {
         Narrator.gameNarrator.UnhideDialogue();
@@ -17,6 +19,11 @@ public class Narration_Trigger : MonoBehaviour
             for (int i = 0; i < sentences.Length; i++)
             {
                 Narrator.gameNarrator.lines[i] = sentences[i];
+            }
+
+            if (blocker != null)
+            {
+                Narrator.gameNarrator.blockingObject = blocker;
             }
 
             Narrator.gameNarrator.StartDialogue();
