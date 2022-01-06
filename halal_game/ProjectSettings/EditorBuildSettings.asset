@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 4e4d95dd7902d524a8ec58164d4c8422
+  - enabled: 1
     path: Assets/Scenes/Opening.unity
     guid: 55734c01162cf6a459ca4daaa1ae50c7
   - enabled: 1
@@ -23,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Beach.unity
     guid: 9f7ebaa6cefac514483c9b6bd95fedb1
+  - enabled: 1
+    path: Assets/Scenes/Burbs.unity
+    guid: 5d25e285183f08340b50cd62b69d62e5
   m_configObjects: {}
