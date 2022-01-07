@@ -32,8 +32,9 @@ public class Melee_Kill : MonoBehaviour
         foreach (var body in _pigRigidBodies)
         {
             body.isKinematic = false;
-            body.AddForceAtPosition((direction * _deathForceMultiplier), point, ForceMode.Impulse);
+            body.AddForceAtPosition(((direction + new Vector3(0.0f, 1.0f, 0.0f)) * _deathForceMultiplier), point, ForceMode.Impulse);
         }
         _boxCollider.enabled = false;
+        _animator.enabled = false;
     }
 }

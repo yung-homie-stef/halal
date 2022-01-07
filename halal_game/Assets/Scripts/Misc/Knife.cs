@@ -9,12 +9,14 @@ public class Knife : MonoBehaviour
     private bool _isStabbing = false;
     private float _stabAnimationTime = 0.0f;
     private Animator _animator = null;
+    private BoxCollider _boxCollider = null;
 
     // Start is called before the first frame update
     void Start()
     {
         _stabAnimationTime = stabClip.length;
         _animator = gameObject.GetComponent<Animator>();
+        _boxCollider = gameObject.GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,16 @@ public class Knife : MonoBehaviour
                 _isStabbing = true;
             }
         }
+    }
+
+    public void EnableHitbox(int flag)
+    {
+        if (flag == 0)
+        {
+            _boxCollider.enabled = true;
+        }
+        else
+            _boxCollider.enabled = false;
     }
 
     private IEnumerator ResetStabbing(float waitTime)
