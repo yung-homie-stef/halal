@@ -24,12 +24,15 @@ public class Knife : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (_isStabbing == false)
+            if (Narrator.gameNarrator.chatting != true)
             {
-                StartCoroutine(ResetStabbing(_stabAnimationTime));
-                _animator.SetTrigger("stab");
-                Debug.Log("stab");
-                _isStabbing = true;
+                if (_isStabbing == false)
+                {
+                    StartCoroutine(ResetStabbing(_stabAnimationTime));
+                    _animator.SetTrigger("stab");
+                    Debug.Log("stab");
+                    _isStabbing = true;
+                }
             }
         }
     }

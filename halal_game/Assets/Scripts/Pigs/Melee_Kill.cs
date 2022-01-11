@@ -6,10 +6,15 @@ public class Melee_Kill : MonoBehaviour
 {
     [SerializeField]
     private float _deathForceMultiplier;
+    [SerializeField]
+    private Narration_Trigger dialogueTrigger = null;
+
+    public static int targetsNeededToKill = 0;
+
     private GameObject _contactPoint = null;
     private Rigidbody[] _pigRigidBodies = null;
     private BoxCollider _boxCollider = null;
-    private Animator _animator;
+    private Animator _animator = null;
 
     private void Start()
     {
@@ -36,5 +41,16 @@ public class Melee_Kill : MonoBehaviour
         }
         _boxCollider.enabled = false;
         _animator.enabled = false;
+
+        if (gameObject.GetComponent<Door_Locker>() != null)
+        {
+            gameObject.GetComponent<Door_Locker>().CloseOrOpenDoor(false, "close");
+        }
+
+        targetsNeededToKill--;
+        if (targetsNeededToKill == 0)
+        {
+
+        }
     }
 }

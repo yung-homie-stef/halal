@@ -2133,7 +2133,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1100413146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5f4ff1c07ec1cc498072cfbf10566b1, type: 3}
+  m_Script: {fileID: 11500000, guid: 74c49ef2dba36864687772b3397cee2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
@@ -2142,12 +2142,14 @@ MonoBehaviour:
   - This intersection is long overdue
   - Your self-disgust is palpable, seeping out your every pore. I can hear the squeals,
     it's beautiful. Your kind make for the best lackeys.
-  - 'There''s a hunger you possess, burning a hole in your gut. Teeth, spittle, stomach,
+  - There's a hunger you possess, burning a hole in your gut. Teeth, spittle, stomach,
     begging to be put to work. The most castrated hound in the kennel, but a dog
-    all the same. '
+    all the same.
   - Please, step forward, traverse the doorway 'tween God's legs. She has such sights
     to show you, and we've only begun to skin the frame.
-  blocker: {fileID: 2032424840}
+  objectsToModify:
+  - {fileID: 2032424840}
+  appearOrNot: 00
 --- !u!65 &1100413148
 BoxCollider:
   m_ObjectHideFlags: 0
