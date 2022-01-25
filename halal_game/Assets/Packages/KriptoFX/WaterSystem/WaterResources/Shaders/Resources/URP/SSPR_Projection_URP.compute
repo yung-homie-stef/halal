@@ -1,0 +1,232 @@
+//see README here: https://github.com/ColinLeung-NiloCat/UnityURP-MobileScreenSpacePlanarReflection
+
+//this is Mobile + Non-Mobile separated implementations of "Screen Space Planar Reflections in Ghost Recon Wildlands" using a single URP RendererFeature
+//http://remi-genin.fr/blog/screen-space-plane-indexed-reflection-in-ghost-recon-wildlands/
+
+//*we don't sample fallback reflection probe here, we sample it inside user's shader (e.g. water plane shader)
+//because Lighting data provided by URP (e.g. reflection probe) is only correct when rendering using normal drawing method, but not correct in compute shader
+
+//NUMTHREAD_X * NUMTHREAD_Y must be multiple of 64 and <= 256 to balance between performance and mobile support, so we use 8*8
+#define NUMTHREAD_X 8
+#define NUMTHREAD_Y 8
+
+#define MAX_UINT 4294967295u
+
+#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+
+//common SamplerState settings
+SamplerState PointClampSampler;
+SamplerState LinearClampSampler;
+
+//common uniform input from MobileSSPRRendererFeature.cs
+float2 _RTSize;
+float _HorizontalPlaneHeightWS;
+float _FadeOutScreenBorderWidthVerticle;
+float _FadeOutScreenBorderWidthHorizontal; //compute shader can't declare half type input, so use float
+float3 _CameraDirection;
+//we found that on metal, UNITY_MATRIX_VP is not correct, so we will pass our own VP matrix to compute shader
+//but UNITY_MATRIX_I_VP is correct, not sure why.
+float4x4 _VPMatrix;
+
+float _DepthHolesFillDistance;
+
+//common texture input from MobileSSPRRendererFeature.cs
+RWTexture2D<half4> ColorRT;
+Texture2D<half4> _CameraOpaqueTexture;
+Texture2D<float> _CameraDepthTexture;
+
+//Non-Mobile path will use this RT: single 32bits RInt RT, split first 16bits for GetReflectionColorFromID's y, last 16bits for GetReflectionColorFromID's x
+//y put in first 16 bits because we want to sort by InterlockedMin(), allowing only "closer to reflection plane candidate" to write to HashRT
+RWTexture2D<uint> HashRT;
+
+//Mobile(Android) path will use this RT: single 32bit float for posWSy
+RWTexture2D<float> PosWSyRT;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// shared functions
+////////////////////////////////////////////////////////////////////////////////////////////////////
+float3 ScreenToWorldPos(uint2 id)
+{
+	float2 screenUV = float2(id.x / (_RTSize.x), id.y / (_RTSize.y)); //[0,RTSize-1] -> screen [0,1] uv
+
+#if UNITY_REVERSED_Z
+	float depth = _CameraDepthTexture.SampleLevel(PointClampSampler, screenUV, 0);
+#else
+	float depth = lerp(UNITY_NEAR_CLIP_VALUE, 1, _CameraDepthTexture.SampleLevel(PointClampSampler, screenUV, 0));
+#endif
+	float3 posWS = ComputeWorldSpacePosition(screenUV, depth, UNITY_MATRIX_I_VP);
+	return posWS;
+}
+
+half ComputeUVFade(float2 screenUV, float reflectedPosWSy)
+{
+	float fringeY = 1-screenUV.y;
+	float fringeX = (1 - abs(screenUV.x * 2 - 1));
+	fringeX = saturate(lerp(fringeX * 10 - 1, 1, saturate(fringeY * 2)));
+	fringeY = fringeY * 5;
+
+	return saturate(fringeX * fringeY);
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// kernel: NonMobilePathClear
+////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma kernel NonMobilePathClear
+
+[numthreads(NUMTHREAD_X, NUMTHREAD_Y, 1)]
+void NonMobilePathClear(uint3 id : SV_DispatchThreadID)
+{
+	HashRT[id.xy] = MAX_UINT; //max value as clear, because we want to sort by InterlockedMin()
+	ColorRT[uint2(id.xy)] = half4(0, 0, 0, 0);
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// kernel: NonMobilePathRenderHashRT
+////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma kernel NonMobilePathRenderHashRT
+
+[numthreads(NUMTHREAD_X, NUMTHREAD_Y, 1)]
+void NonMobilePathRenderHashRT(uint3 id : SV_DispatchThreadID)
+{
+	float3 posWS = ScreenToWorldPos(id.xy);
+	
+	if (posWS.y <= _HorizontalPlaneHeightWS)
+		return;
+
+	float3 reflectPosWS = posWS;
+
+	reflectPosWS.y = -reflectPosWS.y + 2 * _HorizontalPlaneHeightWS;
+	float4 reflectPosPS = TransformWorldToHClip(reflectPosWS);
+	float2 reflectUV = (reflectPosPS.xy / reflectPosPS.w) * 0.5 + 0.5;
+#ifdef UNITY_UV_STARTS_AT_TOP 
+	reflectUV.y = 1 - reflectUV.y;
+#endif
+
+	if (reflectUV.x > 0.999 || reflectUV.x > 0.999 || reflectUV.x < 0.001 || reflectUV.y < 0.001) return;
+
+	uint2 reflectedScreenID = reflectUV * _RTSize;//from screen uv[0,1] to [0,RTSize-1]
+
+	
+	float2 screenUV = id.xy / _RTSize;
+	half fadeoutAlpha = ComputeUVFade(screenUV, reflectPosWS.y);
+
+	uint fadeoutAlphaInt = fadeoutAlpha * 255;
+	uint hash = id.y << 20 | id.x << 8 | fadeoutAlphaInt;
+
+#if SHADER_API_METAL
+#else
+	InterlockedMin(HashRT[reflectedScreenID], hash);
+#endif
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// kernel NonMobilePathResolveColorRT
+////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma kernel NonMobilePathResolveColorRT
+
+[numthreads(NUMTHREAD_X, NUMTHREAD_Y, 1)]
+void NonMobilePathResolveColorRT(uint3 id : SV_DispatchThreadID)
+{
+	ColorRT[uint2(id.xy)] = 1;
+	
+	uint hashData = HashRT[id.xy];
+
+	uint left = HashRT[id.xy + uint2(1 + _DepthHolesFillDistance * 0.1, 0)].x;
+	uint right = HashRT[id.xy - uint2(1 + _DepthHolesFillDistance * 0.1, 0)].x;
+	uint up = HashRT[id.xy + uint2(0, 1)].x;
+	uint down = HashRT[id.xy - uint2(0, 1 + _DepthHolesFillDistance)].x;
+
+	hashData = min(left, min(right, min(up, down)));
+
+	if (hashData == MAX_UINT)
+	{
+		ColorRT[id.xy] = 0;
+		return;
+	}
+
+	uint2 sampleID = uint2((hashData >> 8) & 0xFFF, hashData >> 20); 
+	uint alphaAsInt = hashData & 0xFF;
+	half alphaAsFloatingPoint = alphaAsInt / 255.0;
+
+	float2 sampleUV = sampleID.xy / _RTSize;
+	half3 sampledColor = _CameraOpaqueTexture.SampleLevel(LinearClampSampler, sampleUV, 0).xyz;
+	half4 finalColor = half4(sampledColor, alphaAsFloatingPoint);
+	finalColor.a = saturate(finalColor.a);
+	ColorRT[id.xy] = finalColor;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// kernel MobilePathSinglePassColorRTDirectResolve
+////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma kernel MobilePathSinglePassColorRTDirectResolve
+
+[numthreads(NUMTHREAD_X, NUMTHREAD_Y, 1)]
+void MobilePathSinglePassColorRTDirectResolve(uint3 id : SV_DispatchThreadID)
+{
+	
+
+	ColorRT[id.xy] = half4(0, 0, 0, 0);
+	PosWSyRT[id.xy] = HALF_MAX;
+
+	float3 posWS = ScreenToWorldPos(id.xy);
+
+	if (posWS.y <= _HorizontalPlaneHeightWS)
+		return;
+
+	float3 reflectPosWS = posWS;
+
+	reflectPosWS.y = -reflectPosWS.y + 2 * _HorizontalPlaneHeightWS;
+	float4 reflectPosPS = TransformWorldToHClip(reflectPosWS);
+	float2 reflectUV = (reflectPosPS.xy / reflectPosPS.w) * 0.5 + 0.5;
+#ifdef UNITY_UV_STARTS_AT_TOP 
+	reflectUV.y = 1 - reflectUV.y;
+#endif
+
+	float2 screenUV = id.xy / _RTSize;
+
+	float2 reflectPixelIndex = reflectUV * _RTSize;
+	if (reflectUV.x > 0.999 || reflectUV.x > 0.999 || reflectUV.x < 0.001 || reflectUV.y < 0.001) return;
+
+	if (posWS.y < PosWSyRT[reflectPixelIndex])
+	{
+		PosWSyRT[reflectPixelIndex] = posWS.y;
+
+		half4 color = _CameraOpaqueTexture.SampleLevel(LinearClampSampler, screenUV, 0);
+		color.a = ComputeUVFade(screenUV, reflectPosWS.y);
+		ColorRT[reflectPixelIndex] = color;
+	
+	}
+	
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// kernel FillHoles
+////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma kernel FillHoles
+
+[numthreads(NUMTHREAD_X, NUMTHREAD_Y, 1)]
+void FillHoles(uint3 id : SV_DispatchThreadID)
+{
+	//fill holes inside each 2*2
+	id.xy *= 2;
+
+	//cache read
+	half4 center = ColorRT[id.xy + uint2(0, 0)];
+	half4 right = ColorRT[id.xy + uint2(0, 1)];
+	half4 bottom = ColorRT[id.xy + uint2(1, 0)];
+	half4 bottomRight = ColorRT[id.xy + uint2(1, 1)];
+
+	//find best inside 2*2
+	half4 best = center;
+	best = right.a > best.a + 0.5 ? right : best;
+	best = bottom.a > best.a + 0.5 ? bottom : best;
+	best = bottomRight.a > best.a + 0.5 ? bottomRight : best;
+
+	//write better rgba
+	ColorRT[id.xy + uint2(0, 0)] = best.a > center.a + 0.5 ? best : center;
+	ColorRT[id.xy + uint2(0, 1)] = best.a > right.a + 0.5 ? best : right;
+	ColorRT[id.xy + uint2(1, 0)] = best.a > bottom.a + 0.5 ? best : bottom;
+	ColorRT[id.xy + uint2(1, 1)] = best.a > bottomRight.a + 0.5 ? best : bottomRight;
+}
