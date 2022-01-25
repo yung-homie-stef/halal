@@ -12,8 +12,11 @@ public abstract class Narration_Trigger : MonoBehaviour
     {
        if (other.tag == "Player")
         {
-            StartTalking();
-            Narrator.gameNarrator.narrationTriggerObject = this;
+            if (!Narrator.gameNarrator.triggered)
+            {
+                StartTalking();
+                Narrator.gameNarrator.narrationTriggerObject = this;
+            }
         }
     }
 

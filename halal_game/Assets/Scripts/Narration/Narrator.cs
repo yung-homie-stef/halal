@@ -19,6 +19,8 @@ public class Narrator : MonoBehaviour
     public Narration_Trigger narrationTriggerObject = null;
     [HideInInspector]
     public bool chatting = false;
+    [HideInInspector]
+    public bool triggered = false;
 
 
     private int _textIndex = 0;
@@ -75,6 +77,7 @@ public class Narrator : MonoBehaviour
     {
         _textIndex = 0;
         _animator.SetBool("is_talking", true);
+        triggered = true;
         StartCoroutine(TypeOutDialogue());
     }
 
@@ -116,6 +119,8 @@ public class Narrator : MonoBehaviour
         narrationTriggerObject.EndOfDialogueEvent();
         textComponent.text = string.Empty;
         pig_textbox.SetActive(false);
+        finishedSentenceIcon.enabled = false;
+        triggered = false;
     }
 
     public void UnhideDialogue()

@@ -61,7 +61,7 @@
             {
                 "type": "UnityEditor.Polybrush.PrefabLoadout, Unity.Polybrush.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ScatteringEditor.userLoadout",
-                "value": "{\"m_Value\":{\"infos\":[{\"palette\":{\"fileID\":11400000,\"guid\":\"9d3f70418f526594b85702539632f8f3\",\"type\":2},\"prefab\":{\"fileID\":-927199367670048503,\"guid\":\"46544f0eb59d3a046938e88f56b45149\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"9d3f70418f526594b85702539632f8f3\",\"type\":2},\"prefab\":{\"fileID\":-927199367670048503,\"guid\":\"3e8ae5ec7538dda45b1be2059f832138\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"9d3f70418f526594b85702539632f8f3\",\"type\":2},\"prefab\":{\"fileID\":-927199367670048503,\"guid\":\"a63feaa8cb2a89343b0f7da2a22cbdc4\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"9d3f70418f526594b85702539632f8f3\",\"type\":2},\"prefab\":{\"fileID\":-927199367670048503,\"guid\":\"652b306456bd8ed4fac93e0b5d3544c7\",\"type\":3}}]}}"
+                "value": "{\"m_Value\":{\"infos\":[]}}"
             },
             {
                 "type": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",

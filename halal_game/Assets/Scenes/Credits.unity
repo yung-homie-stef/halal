@@ -1858,38 +1858,41 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Andres Serrano
+  m_text: 'The Alchemist
 
-    Joshua Roland
-
-    Frederick Maheux
-
-    Valerie Dusk
-
-    Valerie
-    Paris
+    Andres Serrano
 
     Armand Hammer
 
-    The Alchemist
+    clipping.
+
+    David
+    Cronenberg
+
+    Frederick Maheux
+
+    Joshua Roland
+
+    Junji Ito
+
+    Mr. Pink
+
+    Sion
+    Sono
+
+    Valerie Dusk
+
+    Valerie Paris
 
     Ville Kallio
 
     Wim Delvoye
 
-    Mr.
-    Pink
+    Yorgos
+    Lanthimos
 
-    clipping.
 
-    Yorgos Lanthimos
-
-    David Cronenberg
-
-    Sion Sono
-
-    Junji
-    Ito'
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b0366965791aa547918b1d9f1243161, type: 2}
   m_sharedMaterial: {fileID: 2918490952175838504, guid: 4b0366965791aa547918b1d9f1243161,
