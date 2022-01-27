@@ -20,13 +20,12 @@ public class Settings : MonoBehaviour
     private int FOV = 5;
 
     private Settings_Manager _settings_Manager = null;
+    private GameObject lastOpenedScreen = null;
 
     // Start is called before the first frame update
     void Start()
     {
         _settings_Manager = Settings_Manager.GetSettingsManager();
-
-        DontDestroyOnLoad(this);
     }
     public void BackSelected()
     {
@@ -88,5 +87,14 @@ public class Settings : MonoBehaviour
             Narrator.gameNarrator.textComponent.font = dyslexiaFont;
         else
             Narrator.gameNarrator.textComponent.font = linLibertine;
+    }
+    public void SetLastOpenedMenu(GameObject menu)
+    {
+        lastOpenedScreen = menu;
+    }
+    public void GoBack()
+    {
+        lastOpenedScreen.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }

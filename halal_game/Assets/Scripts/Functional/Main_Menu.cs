@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Main_Menu : MonoBehaviour
 {
@@ -10,18 +11,19 @@ public class Main_Menu : MonoBehaviour
     public TextMeshProUGUI settings = null;
     public TextMeshProUGUI quit = null;
 
+    public GameObject settingsMenu = null;
+    public GameObject startMenu = null;
+    public Image blowfly = null;
+
+    private Settings _settings = null;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        _settings = settingsMenu.GetComponent<Settings>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        DontDestroyOnLoad(this);
     }
-
     public void PlaySelected()
     {
         play.alignment = TextAlignmentOptions.Flush;
@@ -40,12 +42,28 @@ public class Main_Menu : MonoBehaviour
         settings.alignment = TextAlignmentOptions.Left;
         quit.alignment = TextAlignmentOptions.Left;
     }
+    public void OpenSettings()
+    {
+        settingsMenu.SetActive(true);
+        _settings.SetLastOpenedMenu(startMenu);
+        startMenu.SetActive(false);
+        RevertText();
+    }
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        startMenu.SetActive(false);
+        settingsMenu.SetActive(false);
+        blowfly.enabled = true;
+        StartCoroutine(LoadIntroSequence(4.0f));
     }
     public void QuitGame()
     {
         Application.Quit();
+    }
+    private IEnumerator LoadIntroSequence(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        blowfly.enabled = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
