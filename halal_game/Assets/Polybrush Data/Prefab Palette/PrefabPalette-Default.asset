@@ -13,71 +13,122 @@ MonoBehaviour:
   m_Name: PrefabPalette-Default
   m_EditorClassIdentifier: 
   prefabs:
-  - gameObject: {fileID: -927199367670048503, guid: 46544f0eb59d3a046938e88f56b45149,
+  - gameObject: {fileID: 919132149155446097, guid: a2df1f1157bfd06418b05f278d473957,
       type: 3}
     settings:
-      m_Strength: 58.26748
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.35, y: 0.65}
-      m_UniformBool: 1
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 1
+      m_YRotationBool: 0
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: fish_guts_1
-  - gameObject: {fileID: -927199367670048503, guid: 3e8ae5ec7538dda45b1be2059f832138,
+    name: flower_1
+  - gameObject: {fileID: 919132149155446097, guid: edfd9611761bd5648bfbe878a41e9a76,
       type: 3}
     settings:
-      m_Strength: 29.201681
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.15392156, y: 0.35}
-      m_UniformBool: 1
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 1
+      m_YRotationBool: 0
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: fish_guts_2
-  - gameObject: {fileID: -927199367670048503, guid: a63feaa8cb2a89343b0f7da2a22cbdc4,
+    name: flower_2
+  - gameObject: {fileID: 919132149155446097, guid: 06b66b284b1d76641af08be427c912a9,
       type: 3}
     settings:
-      m_Strength: 17.554993
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.35, y: 0.65}
-      m_UniformBool: 1
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 1
+      m_YRotationBool: 0
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: fish_guts_3
-  - gameObject: {fileID: -927199367670048503, guid: 652b306456bd8ed4fac93e0b5d3544c7,
+    name: flower_3
+  - gameObject: {fileID: 919132149155446097, guid: 15ea57ba84b0ff14cb83b9fec7386e02,
       type: 3}
     settings:
-      m_Strength: 33.361343
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.15392156, y: 0.25784314}
-      m_UniformBool: 1
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 1
+      m_YRotationBool: 0
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: fish_guts_4
+    name: flower_4
+  - gameObject: {fileID: 919132149155446097, guid: 3a9098ed822817345b7725b29f451346,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: flower_5
+  - gameObject: {fileID: 919132149155446097, guid: 0163b83ea6bfdbf468d8a3f33d2ac4b5,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: flower_6
+  - gameObject: {fileID: 919132149155446097, guid: d9bf0614d561e974eafa0daac7f911b5,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: flower_7
