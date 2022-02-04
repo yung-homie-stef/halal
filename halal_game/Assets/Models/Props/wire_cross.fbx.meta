@@ -12,7 +12,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: white
+      name: white_UL
     second: {fileID: 2100000, guid: 46a52a1b8dd92eb4090ef37feff38337, type: 2}
   materials:
     materialImportMode: 2

@@ -7,7 +7,7 @@ public class Melee_Kill : MonoBehaviour
     [SerializeField]
     private float _deathForceMultiplier;
     [SerializeField]
-    private Narration_Trigger dialogueTrigger = null;
+    private Narration_Trigger _dialogueTrigger = null;
 
     public static int targetsNeededToKill = 0;
 
@@ -41,6 +41,7 @@ public class Melee_Kill : MonoBehaviour
         }
         _boxCollider.enabled = false;
         _animator.enabled = false;
+        _dialogueTrigger.gameObject.SetActive(true);
 
         if (gameObject.GetComponent<Door_Locker>() != null)
         {
