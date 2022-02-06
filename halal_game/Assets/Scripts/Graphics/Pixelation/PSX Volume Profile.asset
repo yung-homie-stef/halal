@@ -75,13 +75,13 @@ MonoBehaviour:
   m_AdvancedMode: 0
   widthPixelation:
     m_OverrideState: 1
-    m_Value: 1920
+    m_Value: 1280
   heightPixelation:
     m_OverrideState: 1
-    m_Value: 1080
+    m_Value: 720
   colorPrecision:
     m_OverrideState: 1
-    m_Value: 256
+    m_Value: 64
 --- !u!114 &-2618995116462225482
 MonoBehaviour:
   m_ObjectHideFlags: 3
