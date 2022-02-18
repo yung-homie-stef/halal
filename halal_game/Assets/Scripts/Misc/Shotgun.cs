@@ -1,0 +1,63 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Shotgun : MonoBehaviour
+{
+    public Camera playerCamera;
+    public RaycastHit playerRaycastHit;
+    public GameObject shotgun = null;
+
+    private Vector3 _bulletPoint;
+    private Vector3 _bulletDirection;
+    private float range = 3.0f;
+    private RaycastHit _killedObject;
+    private bool _canShoot = true;
+    private Animator _animator = null;
+
+    Kill _killScript = null;
+
+    private void Start()
+    {
+        _animator = shotgun.GetComponent<Animator>();
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            ///if (!Narrator.gameNarrator.chatting && _canShoot)
+            {
+                Shoot();
+            }
+        }
+    }
+
+    private void Shoot()
+    {
+        _animator.SetTrigger("shoot");
+        _canShoot = false;
+
+        RaycastHit _hit;
+        if (Physics.Raycast(playerCamera.transform.position, _bulletDirection, out _hit, range))
+        {
+            if (_hit.transform.GetComponent<Kill>())
+            {
+                _killedObject = _hit;
+                _bulletPoint = _hit.point;
+
+                _killScript = _killedObject.transform.GetComponent<Kill>();
+                _killScript.CatchHotOnes(_bulletPoint, _bulletDirection);
+            }
+        }
+        
+    }
+
+    public void Reload()
+    {
+        _canShoot = true;
+    }
+        
+}
