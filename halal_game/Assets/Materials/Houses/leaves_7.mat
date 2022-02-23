@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: leaves
+  m_Name: leaves_7
   m_Shader: {fileID: -6465566751694194690, guid: d7f1e06e1e88a8c4fba2a99c0b5c25fd,
     type: 3}
   m_ShaderKeywords: _ALPHATEST_ON
@@ -29,7 +29,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_AC2D38DB:
-        m_Texture: {fileID: 2800000, guid: 2c4f030965c04c446b410913787febd0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 98eb62f65cb1cfc4d8bb81d3329cf00f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_C1EE7360:

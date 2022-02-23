@@ -10,7 +10,8 @@ public class Shotgun : MonoBehaviour
 
     private Vector3 _bulletPoint;
     private Vector3 _bulletDirection;
-    private float range = 3.0f;
+    [SerializeField]
+    private float range = 0.0f;
     private RaycastHit _killedObject;
     private bool _canShoot = true;
     private Animator _animator = null;
@@ -28,7 +29,7 @@ public class Shotgun : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            ///if (!Narrator.gameNarrator.chatting && _canShoot)
+            if (!Narrator.gameNarrator.chatting && _canShoot)
             {
                 Shoot();
             }
@@ -39,6 +40,7 @@ public class Shotgun : MonoBehaviour
     {
         _animator.SetTrigger("shoot");
         _canShoot = false;
+        _bulletDirection = playerCamera.transform.forward;
 
         RaycastHit _hit;
         if (Physics.Raycast(playerCamera.transform.position, _bulletDirection, out _hit, range))

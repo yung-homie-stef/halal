@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: PrefabPalette-Default
   m_EditorClassIdentifier: 
   prefabs:
-  - gameObject: {fileID: 919132149155446097, guid: b4915bdf17497cb4c9f3c5ebc86ba69e,
+  - gameObject: {fileID: -927199367670048503, guid: 56b008b01646e224f998f64dd162e896,
       type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 14.693294
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -29,11 +29,28 @@ MonoBehaviour:
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: octopus_1
-  - gameObject: {fileID: 919132149155446097, guid: f0ee3b8c9fd1c7d438d9bc2c729c0bc0,
+    name: reeds
+  - gameObject: {fileID: -927199367670048503, guid: 8d6d58b071eb88d41be3bf7fb4cbfdd0,
       type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 16.105562
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 0.86577183, y: 1.1006712}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: reeds_2
+  - gameObject: {fileID: -927199367670048503, guid: e3a59144839382e4c85bf06acf460c74,
+      type: 3}
+    settings:
+      m_Strength: 86.71897
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -46,11 +63,11 @@ MonoBehaviour:
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: octopus_2
-  - gameObject: {fileID: 919132149155446097, guid: 26cb53ccf6bdbd042a3820b6c0e04bbc,
+    name: reeds_3
+  - gameObject: {fileID: -927199367670048503, guid: af5ac469a17defd42bc7a7c38ef8d2d8,
       type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 86.71897
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -63,4 +80,4 @@ MonoBehaviour:
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: octopus_3
+    name: reeds_4
