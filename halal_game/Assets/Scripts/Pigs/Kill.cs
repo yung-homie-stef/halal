@@ -10,6 +10,7 @@ public class Kill : MonoBehaviour
     private float _deathForceMultiplier = 0.0f;
 
     private Rigidbody[] _pigRigidBodies = null;
+    private CapsuleCollider[] _pigCapsuleCOlliders = null;
     private SphereCollider _sphereCollider = null;
     private Animator _animator = null;
     private Pig_Wander _wanderScript = null;
@@ -19,6 +20,7 @@ public class Kill : MonoBehaviour
         _animator = pig.GetComponent<Animator>();
         _sphereCollider = GetComponent<SphereCollider>();
         _pigRigidBodies = pig.GetComponentsInChildren<Rigidbody>();
+        _pigCapsuleCOlliders = pig.GetComponentsInChildren<CapsuleCollider>();
         _wanderScript = gameObject.GetComponent<Pig_Wander>();
     }
     public void CatchHotOnes(Vector3 point = default(Vector3), Vector3 direction = default(Vector3))
@@ -38,7 +40,13 @@ public class Kill : MonoBehaviour
             body.AddForceAtPosition((direction * deathForceMultiplier), point, ForceMode.Impulse);
         }
 
-        _sphereCollider.enabled = false;
+        foreach (CapsuleCollider cap in _pigCapsuleCOlliders)
+        {
+            cap.enabled = true;
+        }
+
+        pig.transform.parent = null;
         _animator.enabled = false;
+        Destroy(gameObject);
     }
 }
