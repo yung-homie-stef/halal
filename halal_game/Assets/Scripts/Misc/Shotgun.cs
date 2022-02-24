@@ -29,7 +29,7 @@ public class Shotgun : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (!Narrator.gameNarrator.chatting && _canShoot)
+            if (_canShoot)
             {
                 Shoot();
             }
@@ -50,15 +50,18 @@ public class Shotgun : MonoBehaviour
                 _killedObject = _hit;
                 _bulletPoint = _hit.point;
 
-                _killScript = _killedObject.transform.GetComponent<Kill>();
+                _killScript = _killedObject.transform.gameObject.GetComponent<Kill>();
                 _killScript.CatchHotOnes(_bulletPoint, _bulletDirection);
             }
         }
+
+        StartCoroutine(Reload(1.16f));
         
     }
 
-    public void Reload()
+    private IEnumerator Reload(float waitTime)
     {
+        yield return new WaitForSeconds(waitTime);
         _canShoot = true;
     }
         

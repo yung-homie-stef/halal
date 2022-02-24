@@ -10,7 +10,8 @@ public class Pig_Wander : MonoBehaviour
         Wandering,
         Fleeing,
         Eating,
-        Pissing
+        Pissing,
+        Dead
     }
 
     public PigStates currentPigStates = PigStates.Wandering;
@@ -79,6 +80,11 @@ public class Pig_Wander : MonoBehaviour
             case PigStates.Pissing:
                 {
                     PissState(Time.deltaTime);
+                    break;
+                }
+            case PigStates.Dead:
+                {
+                    DeadState();
                     break;
                 }
         }
@@ -153,6 +159,14 @@ public class Pig_Wander : MonoBehaviour
             urine.SetActive(false);
             currentPigStates = PigStates.Wandering;
         }
+    }
+
+    void DeadState()
+    {
+        _fleeScript.enabled = false;
+        _fleeUnitScript.enabled = false;
+        _wander2Script.enabled = false;
+        _steerScript.enabled = false;
     }
 
 }

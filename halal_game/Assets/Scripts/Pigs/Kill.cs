@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class Kill : MonoBehaviour
 {
+    public GameObject pig = null;
+
     [SerializeField]
     private float _deathForceMultiplier = 0.0f;
 
     private Rigidbody[] _pigRigidBodies = null;
-    private BoxCollider _boxCollider = null;
+    private SphereCollider _sphereCollider = null;
     private Animator _animator = null;
+    private Pig_Wander _wanderScript = null;
 
      void Start()
     {
-        _animator = GetComponent<Animator>();
-        _boxCollider = GetComponent<BoxCollider>();
-        _pigRigidBodies = GetComponentsInChildren<Rigidbody>();
+        _animator = pig.GetComponent<Animator>();
+        _sphereCollider = GetComponent<SphereCollider>();
+        _pigRigidBodies = pig.GetComponentsInChildren<Rigidbody>();
+        _wanderScript = gameObject.GetComponent<Pig_Wander>();
     }
     public void CatchHotOnes(Vector3 point = default(Vector3), Vector3 direction = default(Vector3))
     {
+        _wanderScript.currentPigStates = Pig_Wander.PigStates.Dead;
         Die(point, direction);
     }
 
@@ -33,7 +38,7 @@ public class Kill : MonoBehaviour
             body.AddForceAtPosition((direction * deathForceMultiplier), point, ForceMode.Impulse);
         }
 
-        _boxCollider.enabled = false;
+        _sphereCollider.enabled = false;
         _animator.enabled = false;
     }
 }
