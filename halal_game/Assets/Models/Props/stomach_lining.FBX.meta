@@ -3,11 +3,16 @@ guid: 6e16e5da4dc579e44a2a23c1d4cc3686
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: intestines
+    second: {fileID: 2100000, guid: 35dacc9b5cdd22241b5f434f24d2bfcf, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

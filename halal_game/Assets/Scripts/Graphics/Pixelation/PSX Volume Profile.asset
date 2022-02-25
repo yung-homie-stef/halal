@@ -58,7 +58,7 @@ MonoBehaviour:
     m_Value: {x: 1, y: 1, z: 1, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0, y: 0, z: 0, w: 0}
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
 --- !u!114 &-2649047749314681680
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -75,13 +75,13 @@ MonoBehaviour:
   m_AdvancedMode: 0
   widthPixelation:
     m_OverrideState: 1
-    m_Value: 1920
+    m_Value: 1280
   heightPixelation:
     m_OverrideState: 1
-    m_Value: 1080
+    m_Value: 720
   colorPrecision:
     m_OverrideState: 1
-    m_Value: 64
+    m_Value: 128
 --- !u!114 &-2618995116462225482
 MonoBehaviour:
   m_ObjectHideFlags: 3

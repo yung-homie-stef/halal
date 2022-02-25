@@ -6,13 +6,15 @@ using TheFirstPerson;
 
 public class Swallow : MonoBehaviour
 {
-    public Image blackImage;
-    public GameObject fleshPit;
-    public GameObject pigCentipede;
-    public GameObject sausages;
-    public Transform teleportationPoint;
+    public Image blackImage = null;
+    public GameObject fleshPit = null;
+    public GameObject pigCentipede = null;
+    public GameObject sausages = null;
+    public Transform teleportationPoint = null;
 
-    //public TheFirstPerson player;
+    public Light directionalLight = null;
+
+    public FPSController player;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,6 +24,10 @@ public class Swallow : MonoBehaviour
             sausages.SetActive(false);
             pigCentipede.SetActive(false);
             fleshPit.SetActive(true);
+
+            directionalLight.enabled = false;
+            RenderSettings.skybox = null;
+
             StartCoroutine(TeleportPlayer(2.0f));
         }
     }
@@ -31,7 +37,7 @@ public class Swallow : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         blackImage.enabled = false;
-      //  .transform.position = teleportationPoint.position;
+        player.transform.position = teleportationPoint.position;
 
     }
 }
