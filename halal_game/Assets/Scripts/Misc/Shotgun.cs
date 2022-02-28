@@ -17,6 +17,7 @@ public class Shotgun : MonoBehaviour
     private Animator _animator = null;
 
     Kill _killScript = null;
+    Destructible _destructibleScript = null;
 
     private void Start()
     {
@@ -52,6 +53,14 @@ public class Shotgun : MonoBehaviour
 
                 _killScript = _killedObject.transform.gameObject.GetComponent<Kill>();
                 _killScript.CatchHotOnes(_bulletPoint, _bulletDirection);
+            }
+            else if (_hit.transform.GetComponent<Destructible>())
+            {
+                _killedObject = _hit;
+                _bulletPoint = _hit.point;
+                _destructibleScript = _killedObject.transform.gameObject.GetComponent<Destructible>();
+                _destructibleScript.DestroyMesh(_bulletPoint, _bulletDirection);
+                
             }
         }
 
