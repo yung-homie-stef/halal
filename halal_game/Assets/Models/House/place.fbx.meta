@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: concrete
+    second: {fileID: 2100000, guid: 98c786cc2a2d26e40bc220763ca0f537, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: house_1
     second: {fileID: 2100000, guid: c54636e9e6b007a4f99f5e204f09401f, type: 2}
   - first:
