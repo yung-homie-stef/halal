@@ -5,6 +5,7 @@ using UnityEngine;
 public class Kill : MonoBehaviour
 {
     public GameObject pig = null;
+    public Kill_Count _killCount = null;
 
     [SerializeField]
     private float _deathForceMultiplier = 0.0f;
@@ -26,6 +27,11 @@ public class Kill : MonoBehaviour
     public void CatchHotOnes(Vector3 point = default(Vector3), Vector3 direction = default(Vector3))
     {
         _wanderScript.currentPigStates = Pig_Wander.PigStates.Dead;
+        if (_killCount != null)
+        {
+            _killCount.TallyPigKill();
+        }
+
         Die(point, direction);
     }
 

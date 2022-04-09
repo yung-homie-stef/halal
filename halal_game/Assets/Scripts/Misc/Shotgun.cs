@@ -39,32 +39,35 @@ public class Shotgun : MonoBehaviour
 
     private void Shoot()
     {
-        _animator.SetTrigger("shoot");
-        _canShoot = false;
-        _bulletDirection = playerCamera.transform.forward;
-
-        RaycastHit _hit;
-        if (Physics.Raycast(playerCamera.transform.position, _bulletDirection, out _hit, range))
+        if (!Narrator.gameNarrator.chatting)
         {
-            if (_hit.transform.GetComponent<Kill>())
-            {
-                _killedObject = _hit;
-                _bulletPoint = _hit.point;
+            _animator.SetTrigger("shoot");
+            _canShoot = false;
+            _bulletDirection = playerCamera.transform.forward;
 
-                _killScript = _killedObject.transform.gameObject.GetComponent<Kill>();
-                _killScript.CatchHotOnes(_bulletPoint, _bulletDirection);
-            }
-            else if (_hit.transform.GetComponent<Destructible>())
+            RaycastHit _hit;
+            if (Physics.Raycast(playerCamera.transform.position, _bulletDirection, out _hit, range))
             {
-                _killedObject = _hit;
-                _bulletPoint = _hit.point;
-                _destructibleScript = _killedObject.transform.gameObject.GetComponent<Destructible>();
-                _destructibleScript.DestroyMesh(_bulletPoint, _bulletDirection);
-                
+                if (_hit.transform.GetComponent<Kill>())
+                {
+                    _killedObject = _hit;
+                    _bulletPoint = _hit.point;
+
+                    _killScript = _killedObject.transform.gameObject.GetComponent<Kill>();
+                    _killScript.CatchHotOnes(_bulletPoint, _bulletDirection);
+                }
+                else if (_hit.transform.GetComponent<Destructible>())
+                {
+                    _killedObject = _hit;
+                    _bulletPoint = _hit.point;
+                    _destructibleScript = _killedObject.transform.gameObject.GetComponent<Destructible>();
+                    _destructibleScript.DestroyMesh(_bulletPoint, _bulletDirection);
+
+                }
             }
+
+            StartCoroutine(Reload(1.16f));
         }
-
-        StartCoroutine(Reload(1.16f));
         
     }
 
