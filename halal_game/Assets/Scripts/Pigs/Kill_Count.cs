@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Kill_Count : MonoBehaviour
 {
-    private int pigCount = 3;
+    static public int pigCount = 3;
     public bool isDead = false;
 
-    public Narration_Disappear gunTextBoxes = null;
+    public Narration_ComponentEnabler gunTextBoxes = null;
 
 
     public void TallyPigKill()
@@ -16,9 +16,11 @@ public class Kill_Count : MonoBehaviour
         {
             pigCount--;
             gunTextBoxes.gameObject.SetActive(true);
+            Debug.Log(pigCount);
 
             if (pigCount == 0)
             {
+                
                 // trigger going to the centipede level
             }
 

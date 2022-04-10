@@ -6,6 +6,7 @@ public class Kill : MonoBehaviour
 {
     public GameObject pig = null;
     public Kill_Count _killCount = null;
+    public bool isWandering = true;
 
     [SerializeField]
     private float _deathForceMultiplier = 0.0f;
@@ -22,11 +23,18 @@ public class Kill : MonoBehaviour
         _sphereCollider = GetComponent<SphereCollider>();
         _pigRigidBodies = pig.GetComponentsInChildren<Rigidbody>();
         _pigCapsuleCOlliders = pig.GetComponentsInChildren<CapsuleCollider>();
-        _wanderScript = gameObject.GetComponent<Pig_Wander>();
+
+        if (isWandering)
+        {
+            _wanderScript = gameObject.GetComponent<Pig_Wander>();
+        }
     }
     public void CatchHotOnes(Vector3 point = default(Vector3), Vector3 direction = default(Vector3))
     {
-        _wanderScript.currentPigStates = Pig_Wander.PigStates.Dead;
+        if (isWandering)
+        {
+            _wanderScript.currentPigStates = Pig_Wander.PigStates.Dead;
+        }
         if (_killCount != null)
         {
             _killCount.TallyPigKill();
