@@ -15028,6 +15028,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flies
       objectReference: {fileID: 0}
+    - target: {fileID: 7904243214221683323, guid: c4dc63db38ae3c148a4bd5a760883490,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4dc63db38ae3c148a4bd5a760883490, type: 3}
 --- !u!1 &382232399
@@ -17111,7 +17116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1003999806
 Transform:
   m_ObjectHideFlags: 0

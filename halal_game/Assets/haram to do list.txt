@@ -1,12 +1,9 @@
 Church - COMPLETE
 
-Beach
-Make dock for end of level
-Wrap up octopus dream question dialogue (2nd iteration)
+Beach - COMPLETE
 
 Centipede
 Spit particle effect
-Detailing around sides of level
 
 Gun
 Dialogue for all three killings
@@ -16,11 +13,10 @@ Collision for house
 Decorations for houses
 More trees
 Scripted event for when pigs are killed
-Thing to interact to end level
+Doghouse model
 
 Shit
 Dialogue (2 monologues)
 Potential rain effect
-Shit geyser
 Something to interact with in the end
 
