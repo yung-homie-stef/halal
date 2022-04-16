@@ -8,6 +8,7 @@ public class Kill_Count : MonoBehaviour
     public bool isDead = false;
 
     public Narration_ComponentEnabler gunTextBoxes = null;
+    public GameObject doghouse = null;
 
 
     public void TallyPigKill()
@@ -20,8 +21,9 @@ public class Kill_Count : MonoBehaviour
 
             if (pigCount == 0)
             {
-                
+
                 // trigger going to the centipede level
+                doghouse.SetActive(true);
             }
 
             isDead = true;

@@ -7,13 +7,11 @@ Spit particle effect
 
 Gun
 Dialogue for all three killings
-Dialogue for picking up gun
 Blood effect for pig killing
 Collision for house
 Decorations for houses
 More trees
-Scripted event for when pigs are killed
-Doghouse model
+
 
 Shit
 Dialogue (2 monologues)

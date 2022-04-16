@@ -1708,7 +1708,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3639
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -1733,7 +1733,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &240693784 stripped
 Transform:
@@ -2127,7 +2127,7 @@ RectTransform:
   - {fileID: 1939306468}
   - {fileID: 34259945}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2542,7 +2542,7 @@ RectTransform:
   - {fileID: 900871235}
   - {fileID: 882757045}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2561,7 +2561,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23684
+  m_Name: pb_Mesh24294
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4227,7 +4227,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &682362086 stripped
 Transform:
@@ -4978,7 +4978,7 @@ Transform:
   - {fileID: 963089363}
   - {fileID: 1589843999}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &742484638
 MonoBehaviour:
@@ -6960,7 +6960,7 @@ Transform:
   m_LocalScale: {x: 1.8327, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &840217902
 PrefabInstance:
@@ -8359,7 +8359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 987037756}
   m_Layer: 0
-  m_Name: pigs
+  m_Name: live_pigs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9135,7 +9135,7 @@ Transform:
   - {fileID: 1131962459}
   - {fileID: 1097244571}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1131962459 stripped
 Transform:
@@ -9242,7 +9242,7 @@ Transform:
   - {fileID: 887008369}
   - {fileID: 1888001504}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1194966493 stripped
 GameObject:
@@ -10055,6 +10055,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3a59144839382e4c85bf06acf460c74, type: 3}
+--- !u!1 &1336853024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336853025}
+  m_Layer: 0
+  m_Name: dead_pigs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336853025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336853024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.514074, y: 0.58182347, z: 1.7162346}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1344745596 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7425355943616221993, guid: 249df1bbe884a4842b55648d8b01b04b,
@@ -10674,10 +10704,15 @@ MonoBehaviour:
     the street bubbles, every home a mason jar coated thick with lard parboiling
     its hosts out their syrup induced comas.
   - There's no need to fear. Packed in the trap like dead lobsters, braided in a
-    filthy, hazeous fatigue.
-  - 'It''s toxic, chocolate in a dog''s stomach. The bile duct of this block is overworked. '
-  - 
-  - 
+    filthy, hazeous fatigue. From afar this shithole and Paradise are dead ringers,
+    but peer through the cracks for a moment..
+  - The floorboards are rotten, the trees are sick, the soil is barren. The Sun's
+    relentless divine light more mockery than warmth.
+  - It's toxic, chocolate in a dog's stomach. The bile duct of this block is overworked,
+    you must filtrate it before it's washed away.
+  - There are three little piggies who have festered in this wound for far too long,
+    bring the excision to them. See what it means to assume the role of the butcher.
+    Turn their castles into tombs.
   objectsToModify: []
   appearOrNot: 
 --- !u!1001 &1565819114
@@ -12353,7 +12388,7 @@ Transform:
   - {fileID: 1530783962}
   - {fileID: 1570827837}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1757654719 stripped
 Transform:
@@ -12671,7 +12706,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1833070967 stripped
 Transform:
