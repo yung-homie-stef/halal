@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Kill_Count : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Kill_Count : MonoBehaviour
 
     public Narration_ComponentEnabler gunTextBoxes = null;
     public GameObject doghouse = null;
+    public Canvas shotgunCanvas = null;
 
 
     public void TallyPigKill()
@@ -24,6 +26,7 @@ public class Kill_Count : MonoBehaviour
 
                 // trigger going to the centipede level
                 doghouse.SetActive(true);
+                shotgunCanvas.gameObject.SetActive(false);
             }
 
             isDead = true;
