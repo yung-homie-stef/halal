@@ -122,7 +122,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_10125e5cde224157afee9d56b33c419f: 0.5
+    - Vector1_10125e5cde224157afee9d56b33c419f: 1
     - Vector1_cd19350a96944acb8a02568296eb5756: 40
     - Vector1_cd19350a96944acb8a02568296eb5756_1: 40
     - Vector1_cd19350a96944acb8a02568296eb5756_2: 40
@@ -138,7 +138,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _Gloss: 0.08
+    - _Gloss: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0

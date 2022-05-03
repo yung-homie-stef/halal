@@ -91,7 +91,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _Exposure: 1.17
+    - _Exposure: 1.33
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -100,7 +100,7 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Rotation: 515.22906
+    - _Rotation: 178.71397
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -113,7 +113,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tint: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5}
+    - _Tint: {r: 0.4433962, g: 0.3649287, b: 0.31163225, a: 0.5}
   m_BuildTextureStacks: []
 --- !u!114 &1949234086237015661
 MonoBehaviour:
