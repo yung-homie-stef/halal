@@ -4184,8 +4184,9 @@ MonoBehaviour:
   sentences:
   - Bled with the practiced ease of an old surgeon, that's one less lung sucking
     the miasma out this compound. Good riddance.
-  - How does it feel to put your miserable flesh and blood to use for once?
-  - 
+  - 'A house is only a haven as long as you''re wanted. '
+  - How does it feel to put your miserable flesh to use? To cast off the bondage
+    you dangle from like a pliant marionette?
   componentNames: []
   objectsWithScriptsToEnable: []
   scriptEnabled: 
@@ -10997,9 +10998,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Bled with the practiced ease of an old surgeon, that's one less lung sucking
-    the miasma out this compound. Good riddance.
-  - 'How does it feel to put your miserable flesh and blood to use for once? '
+  - 
+  - 
   - 
   componentNames: []
   objectsWithScriptsToEnable: []

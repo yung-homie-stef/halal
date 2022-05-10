@@ -10,7 +10,7 @@ Dialogue for all three killings
 Blood effect for pig killing
 Collision for house
 Decorations for houses
-More trees
+
 
 
 Shit
