@@ -13,74 +13,6 @@ MonoBehaviour:
   m_Name: PrefabPalette-Default
   m_EditorClassIdentifier: 
   prefabs:
-  - gameObject: {fileID: 919132149155446097, guid: 124bb1689ee734947b2b8afb73784e2c,
-      type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.75, y: 1.25}
-      m_UniformBool: 1
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 1
-      m_ZScaleBool: 0
-    name: desert_reed_2_5
-  - gameObject: {fileID: 919132149155446097, guid: 34371166a2407004880203579083bf5c,
-      type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.75, y: 1.25}
-      m_UniformBool: 1
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: desert_reed_2_6
-  - gameObject: {fileID: 919132149155446097, guid: 11c76b7ebca6dfe47b7aaa60ff10b11c,
-      type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.75, y: 1.25}
-      m_UniformBool: 1
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: desert_reed_2_7
-  - gameObject: {fileID: 919132149155446097, guid: 3d90fe5351bdb824292bd6645f679b43,
-      type: 3}
-    settings:
-      m_Strength: 60
-      m_RotationRangeMin: {x: 0, y: 0.75, z: 0}
-      m_RotationRangeMax: {x: 0, y: 1.25, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 1
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: desert_reed_2_8
   - gameObject: {fileID: 919132149155446097, guid: dd9e944b066cf144f917712a351738ec,
       type: 3}
     settings:
@@ -203,7 +135,7 @@ MonoBehaviour:
   - gameObject: {fileID: 919132149155446097, guid: 1bcb12357c32eee4d9a454fd9d400c5b,
       type: 3}
     settings:
-      m_Strength: 18.930098
+      m_Strength: 7.6319513
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -220,7 +152,7 @@ MonoBehaviour:
   - gameObject: {fileID: 919132149155446097, guid: acadcf2a15c562d449370726c88bcfc3,
       type: 3}
     settings:
-      m_Strength: 69.56563
+      m_Strength: 82.27604
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -237,7 +169,7 @@ MonoBehaviour:
   - gameObject: {fileID: 919132149155446097, guid: 0d28f61e9e88690489dac1c83832c205,
       type: 3}
     settings:
-      m_Strength: 56.855213
+      m_Strength: 72.39017
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -254,7 +186,7 @@ MonoBehaviour:
   - gameObject: {fileID: 919132149155446097, guid: d09fc1f00f39c3e42bc9c5e322537709,
       type: 3}
     settings:
-      m_Strength: 34.258915
+      m_Strength: 7.425818
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -288,7 +220,7 @@ MonoBehaviour:
   - gameObject: {fileID: 919132149155446097, guid: 4b1b18070179b9f488917e398c01a522,
       type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 74.00856
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -305,7 +237,7 @@ MonoBehaviour:
   - gameObject: {fileID: 919132149155446097, guid: 6841cd8273859b74ebacfdee1aa93745,
       type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 78.03924
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -322,7 +254,7 @@ MonoBehaviour:
   - gameObject: {fileID: 919132149155446097, guid: aa734f15128ba2d48be0f1a520137437,
       type: 3}
     settings:
-      m_Strength: 7.631952
+      m_Strength: 68.35949
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -370,195 +302,292 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: littered_bone_2
-  - gameObject: {fileID: 0}
+  - gameObject: {fileID: 919132149155446097, guid: 45bfb134f9f225a4888ff0bb8ba65f37,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_1_1
+  - gameObject: {fileID: 919132149155446097, guid: 40e2d0e6cc0c2334c8d0c4edde164a78,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_1_2
+  - gameObject: {fileID: 919132149155446097, guid: 5ca29b5f686cf514cb898bc464f5e94a,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_1_3
+  - gameObject: {fileID: 919132149155446097, guid: 39c3951577589f146a0b8033ae23dcf2,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_1_4
+  - gameObject: {fileID: 919132149155446097, guid: e125a9dc2281a0a4b9a8196a111d563f,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_1_5
+  - gameObject: {fileID: 919132149155446097, guid: 23436390fcbdb09448e36c96901f5e9b,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_1_6
+  - gameObject: {fileID: 919132149155446097, guid: a72d11a990fcc904086a8ff5d48523bd,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_1_7
+  - gameObject: {fileID: 919132149155446097, guid: d6fd1871f7250ca4587a0d8639ed4dc4,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_1_8
+  - gameObject: {fileID: 919132149155446097, guid: 4e637b28120f81941aee1a335d254828,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_1_9
+  - gameObject: {fileID: 919132149155446097, guid: f176ce75707714a47a8e7ada7e10ec49,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_2_1
+  - gameObject: {fileID: 919132149155446097, guid: a83adb6ed9206a9469b54af9c950f119,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
-  - gameObject: {fileID: 0}
+    name: desert_reed_2_2
+  - gameObject: {fileID: 919132149155446097, guid: 6803519203e4ce44fbe1a63df5c60112,
+      type: 3}
     settings:
-      m_Strength: 0
+      m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMax: {x: 0, y: 0, z: 0}
-      m_UniformScale: {x: 0, y: 0}
-      m_UniformBool: 0
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: 
+    name: desert_reed_2_3
+  - gameObject: {fileID: 919132149155446097, guid: f65674dcf039a8242a3a3d5cdcdcff98,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: desert_reed_2_4
+  - gameObject: {fileID: 919132149155446097, guid: 124bb1689ee734947b2b8afb73784e2c,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: desert_reed_2_5
+  - gameObject: {fileID: 919132149155446097, guid: 34371166a2407004880203579083bf5c,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: desert_reed_2_6
+  - gameObject: {fileID: 919132149155446097, guid: 11c76b7ebca6dfe47b7aaa60ff10b11c,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: desert_reed_2_7
+  - gameObject: {fileID: 919132149155446097, guid: 3d90fe5351bdb824292bd6645f679b43,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: desert_reed_2_8

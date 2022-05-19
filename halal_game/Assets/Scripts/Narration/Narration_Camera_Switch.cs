@@ -11,16 +11,15 @@ public class Narration_Camera_Switch : Narration_Trigger
     [SerializeField]
     private int indexToActivate = 0;
 
-    public PlayableDirector cameraSwapCutscene = null;
+    public Quaternion endRotation;
+    public Quaternion cameraRotation;
+    public float rotationSpeed = 0f;
+    private bool hasSwapped = false;
+    private GameObject playerThatWillBeRotated = null;
 
     public override void EndOfDialogueEvent()
     {
-        StartCoroutine(SwapCameras((float)cameraSwapCutscene.duration));
-    }
-
-    private IEnumerator SwapCameras(float waitTime)
-    {
-        yield return new WaitForSeconds(waitTime);
+        hasSwapped = true;
 
         for (int i = 0; i < playerControllers.Length; i++)
         {
@@ -32,4 +31,19 @@ public class Narration_Camera_Switch : Narration_Trigger
                 playerControllers[i].enabled = false;
         }
     }
+
+    private void Update()
+    {
+        if (hasSwapped == true)
+        {
+            playerThatWillBeRotated.transform.rotation = Quaternion.RotateTowards(playerThatWillBeRotated.transform.rotation, endRotation, rotationSpeed * Time.deltaTime);
+        }
+    }
+
+    public void SetPlayerToBeRotated(GameObject playerObj)
+    {
+        playerThatWillBeRotated = playerObj;
+    }
+
+
 }
