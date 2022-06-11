@@ -29,3 +29,15 @@ Camera 2 end position - 10.4, 0, -27.8,    rotation - 0, -576, 0
 
 Camera 3 initial position - 52.9, 2.875, 114, rotation - 0, 473, 0
 Camera 3 end position -   121.8, 0.785, 68.5,    rotation - 0, 551.7, 0
+
+
+
+
+
+
+COLD FISH
+DROVE
+PARADISE
+ DUNES
+CIRCLE OF SHIT
+

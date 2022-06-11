@@ -81,7 +81,7 @@ MonoBehaviour:
     m_Value: 720
   colorPrecision:
     m_OverrideState: 1
-    m_Value: 500
+    m_Value: 64
 --- !u!114 &-2618995116462225482
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
   m_Name: ShadowsMidtonesHighlights
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   shadows:
     m_OverrideState: 1
