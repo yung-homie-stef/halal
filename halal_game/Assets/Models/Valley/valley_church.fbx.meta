@@ -9,6 +9,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: valley_church
     second: {fileID: 2100000, guid: 122404d766f887a4eb99e0e8bf5ca035, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: valley_church_floor
+    second: {fileID: 2100000, guid: 469bdbae9138e6a49935c5b19e544d62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: valley_church_interior
+    second: {fileID: 2100000, guid: c5de471c09770c043beb3cb7754976aa, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

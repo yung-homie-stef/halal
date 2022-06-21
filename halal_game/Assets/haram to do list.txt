@@ -3,7 +3,7 @@ Church - COMPLETE
 Beach - COMPLETE
 
 Centipede
-Spit particle effect
+More assets
 
 Gun
 Dialogue for all three killings
@@ -11,13 +11,14 @@ Blood effect for pig killing
 Collision for house
 Decorations for houses
 
-
-
 Shit
 Dialogue (2 monologues)
 Potential rain effect
 Something to interact with in the end
 
+Valley
+Dialogue
+Mary Photoshop
 
 
 Calvary 

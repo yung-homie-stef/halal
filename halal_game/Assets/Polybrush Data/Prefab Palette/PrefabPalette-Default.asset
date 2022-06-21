@@ -13,105 +13,122 @@ MonoBehaviour:
   m_Name: PrefabPalette-Default
   m_EditorClassIdentifier: 
   prefabs:
-  - gameObject: {fileID: 919132149155446097, guid: 7d472084249b83f4fbd552501bf3177a,
-      type: 3}
-    settings:
-      m_Strength: 38.49572
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.75, y: 1.25}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: grass_1_1
-  - gameObject: {fileID: 919132149155446097, guid: 51399478539091f42b20c197e2865e3b,
+  - gameObject: {fileID: 919132149155446097, guid: 28a13b3cb63bb5f4c8176343585bce90,
       type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_RotationRangeMax: {x: 360, y: 360, z: 360}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.75, y: 1.25}
-      m_UniformBool: 0
-      m_XRotationBool: 0
+      m_UniformScale: {x: 0.9, y: 1.1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
       m_YRotationBool: 1
-      m_ZRotationBool: 0
+      m_ZRotationBool: 1
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: grass_1_2
-  - gameObject: {fileID: 919132149155446097, guid: 7cbbc83e5ca3f2442aa85cb8a17db37e,
+    name: pomegranate_1
+  - gameObject: {fileID: 919132149155446097, guid: b73ac77e1cba571488c511c2c42d6eed,
       type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_RotationRangeMax: {x: 360, y: 360, z: 360}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.75, y: 1.25}
-      m_UniformBool: 0
-      m_XRotationBool: 0
+      m_UniformScale: {x: 0.9, y: 1.1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
       m_YRotationBool: 1
-      m_ZRotationBool: 0
+      m_ZRotationBool: 1
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: grass_1_3
-  - gameObject: {fileID: 919132149155446097, guid: 1887ffcb18f638f418912ad6428cb9ee,
+    name: pomegranate_2
+  - gameObject: {fileID: 919132149155446097, guid: 18a0be444bc8e5c4db92ce160550e882,
       type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_RotationRangeMax: {x: 360, y: 360, z: 360}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.8, y: 1.25}
-      m_UniformBool: 0
-      m_XRotationBool: 0
+      m_UniformScale: {x: 0.9, y: 1.1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
       m_YRotationBool: 1
-      m_ZRotationBool: 0
+      m_ZRotationBool: 1
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: grass_2_1
-  - gameObject: {fileID: 919132149155446097, guid: 7c16160243035d84482599fc3008f608,
+    name: pomegranate_3
+  - gameObject: {fileID: 919132149155446097, guid: c16f1dce159da114e95ef9bea6745347,
       type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_RotationRangeMax: {x: 360, y: 360, z: 360}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.8, y: 2.4568965}
-      m_UniformBool: 0
-      m_XRotationBool: 0
+      m_UniformScale: {x: 0.9, y: 1.1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
       m_YRotationBool: 1
-      m_ZRotationBool: 0
+      m_ZRotationBool: 1
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: grass_2_2
-  - gameObject: {fileID: 919132149155446097, guid: 6d06b2fdd58792c42be2a7767b57d9b5,
+    name: pomegranate_4
+  - gameObject: {fileID: 919132149155446097, guid: a04ea5f343174d14d82de60608032508,
       type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_RotationRangeMax: {x: 360, y: 360, z: 360}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1.25}
-      m_UniformBool: 0
-      m_XRotationBool: 0
+      m_UniformScale: {x: 0.9, y: 1.1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
       m_YRotationBool: 1
-      m_ZRotationBool: 0
+      m_ZRotationBool: 1
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: grass_2_3
+    name: pomegranate_5
+  - gameObject: {fileID: 919132149155446097, guid: 596a26431f1814c47ab771a4e1fa2ecf,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 360, y: 360, z: 360}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 0.9, y: 1.1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: pomegranate_6
+  - gameObject: {fileID: 919132149155446097, guid: edb0b3ed1580e034ab0b2d564ea59bc6,
+      type: 3}
+    settings:
+      m_Strength: 37.083454
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 360, y: 360, z: 360}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 0.9, y: 1.1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: pomegranate_7

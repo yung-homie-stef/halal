@@ -6,7 +6,6 @@ using UnityEngine.Events;
 
 public class Collect_Interaction : Interaction
 {
-    public RawImage collectableRenderImage = null;
     public UnityEvent onAllCollected;
 
     private static int objectsCollected = 0;
@@ -19,8 +18,6 @@ public class Collect_Interaction : Interaction
 
     public override void Interact()
     {
-        collectableRenderImage.enabled = true;
-
         objectsCollected++;
 
         if (objectsCollected == 3)
@@ -28,6 +25,7 @@ public class Collect_Interaction : Interaction
             onAllCollected.Invoke();
         }
         gameObject.tag = "Untagged";
-        Destroy(gameObject);
+
+        gameObject.SetActive(false);
     }
 }
