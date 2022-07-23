@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactable
   - Weapon
+  - Floor
   layers:
   - Default
   - TransparentFX

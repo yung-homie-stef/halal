@@ -13,122 +13,20 @@ MonoBehaviour:
   m_Name: PrefabPalette-Default
   m_EditorClassIdentifier: 
   prefabs:
-  - gameObject: {fileID: 919132149155446097, guid: 28a13b3cb63bb5f4c8176343585bce90,
+  - gameObject: {fileID: 919132149155446097, guid: 84e5cca30c0ae904da725bf514bfc88d,
       type: 3}
     settings:
       m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 360, y: 360, z: 360}
+      m_RotationRangeMin: {x: -90, y: 0, z: -90}
+      m_RotationRangeMax: {x: -45, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.9, y: 1.1}
+      m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 1
       m_XRotationBool: 1
       m_YRotationBool: 1
-      m_ZRotationBool: 1
+      m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: pomegranate_1
-  - gameObject: {fileID: 919132149155446097, guid: b73ac77e1cba571488c511c2c42d6eed,
-      type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 360, y: 360, z: 360}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.9, y: 1.1}
-      m_UniformBool: 1
-      m_XRotationBool: 1
-      m_YRotationBool: 1
-      m_ZRotationBool: 1
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: pomegranate_2
-  - gameObject: {fileID: 919132149155446097, guid: 18a0be444bc8e5c4db92ce160550e882,
-      type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 360, y: 360, z: 360}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.9, y: 1.1}
-      m_UniformBool: 1
-      m_XRotationBool: 1
-      m_YRotationBool: 1
-      m_ZRotationBool: 1
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: pomegranate_3
-  - gameObject: {fileID: 919132149155446097, guid: c16f1dce159da114e95ef9bea6745347,
-      type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 360, y: 360, z: 360}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.9, y: 1.1}
-      m_UniformBool: 1
-      m_XRotationBool: 1
-      m_YRotationBool: 1
-      m_ZRotationBool: 1
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: pomegranate_4
-  - gameObject: {fileID: 919132149155446097, guid: a04ea5f343174d14d82de60608032508,
-      type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 360, y: 360, z: 360}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.9, y: 1.1}
-      m_UniformBool: 1
-      m_XRotationBool: 1
-      m_YRotationBool: 1
-      m_ZRotationBool: 1
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: pomegranate_5
-  - gameObject: {fileID: 919132149155446097, guid: 596a26431f1814c47ab771a4e1fa2ecf,
-      type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 360, y: 360, z: 360}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.9, y: 1.1}
-      m_UniformBool: 1
-      m_XRotationBool: 1
-      m_YRotationBool: 1
-      m_ZRotationBool: 1
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: pomegranate_6
-  - gameObject: {fileID: 919132149155446097, guid: edb0b3ed1580e034ab0b2d564ea59bc6,
-      type: 3}
-    settings:
-      m_Strength: 37.083454
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 360, y: 360, z: 360}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.9, y: 1.1}
-      m_UniformBool: 1
-      m_XRotationBool: 1
-      m_YRotationBool: 1
-      m_ZRotationBool: 1
-      m_XScaleBool: 1
-      m_YScaleBool: 1
-      m_ZScaleBool: 1
-    name: pomegranate_7
+    name: egg
