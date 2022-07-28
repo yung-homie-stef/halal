@@ -1,24 +1,11 @@
-Church - COMPLETE
-
-Beach - COMPLETE
-
-Centipede
-More assets
-
-Gun
-Dialogue for all three killings
-Blood effect for pig killing
-Collision for house
-Decorations for houses
-
-Shit
-Dialogue (2 monologues)
-Potential rain effect
-Something to interact with in the end
-
-Valley
-Dialogue
-Mary Photoshop
+ASSETS NEEDED
+Church - slight rework
+Suburbia - New houses, object to interact with
+Chickens - Corn fields, fried chicken, mobiles, barn church, bagger saw
+Beach - Complete
+Valley - COMPLETE
+Calvary - COMPLETE
+Shit - COMPLETE
 
 
 Calvary 
@@ -35,10 +22,10 @@ Camera 3 end position -   121.8, 0.785, 68.5,    rotation - 0, 551.7, 0
 
 
 
-
 COLD FISH
+WEEPING DUNES
+HATCHERY
+DUNG POOL
+INDIAN SUMMER
 DROVE
-PARADISE
- DUNES
-CIRCLE OF SHIT
 
