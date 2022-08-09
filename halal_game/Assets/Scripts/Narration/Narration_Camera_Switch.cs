@@ -7,42 +7,22 @@ using TheFirstPerson;
 
 public class Narration_Camera_Switch : Narration_Trigger
 {
-    public FPSController[] playerControllers = new FPSController[3];
-    [SerializeField]
-    private int indexToActivate = 0;
+    public FPSController controllerToDeactivate;
+    public FPSController controllerToActivate;
+    public Camera currentCamera;
 
-    public Quaternion endRotation;
-    public Quaternion cameraRotation;
-    public float rotationSpeed = 0f;
-    private bool hasSwapped = false;
-    private GameObject playerThatWillBeRotated = null;
+    public Camera_Lerp lerpScript;
 
     public override void EndOfDialogueEvent()
     {
-        hasSwapped = true;
+        controllerToDeactivate.enabled = false;
 
-        for (int i = 0; i < playerControllers.Length; i++)
-        {
-            if (i == indexToActivate)
-            {
-                playerControllers[i].enabled = true;
-            }
-            else
-                playerControllers[i].enabled = false;
-        }
-    }
+        if (controllerToActivate != null)
+        controllerToActivate.enabled = true;
 
-    private void Update()
-    {
-        if (hasSwapped == true)
-        {
-            playerThatWillBeRotated.transform.rotation = Quaternion.RotateTowards(playerThatWillBeRotated.transform.rotation, endRotation, rotationSpeed * Time.deltaTime);
-        }
-    }
+        lerpScript.LerpCamera(currentCamera);
 
-    public void SetPlayerToBeRotated(GameObject playerObj)
-    {
-        playerThatWillBeRotated = playerObj;
+        Destroy(gameObject);
     }
 
 

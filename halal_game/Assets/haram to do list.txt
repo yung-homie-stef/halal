@@ -1,12 +1,12 @@
 ASSETS NEEDED
-Church - slight rework
+
 Suburbia - New houses, object to interact with
-Chickens - Corn fields, fried chicken, mobiles, barn church, bagger saw
-Beach - Complete
+Chickens - COMPLETE
+Beach - COMPLETE
 Valley - COMPLETE
 Calvary - COMPLETE
 Shit - COMPLETE
-
+Church - COMPLETE
 
 Calvary 
 Camera 1 initial position - 0,0,0            rotation - 0, 0, 0
@@ -22,10 +22,9 @@ Camera 3 end position -   121.8, 0.785, 68.5,    rotation - 0, 551.7, 0
 
 
 
-COLD FISH
-WEEPING DUNES
-HATCHERY
-DUNG POOL
-INDIAN SUMMER
-DROVE
+Cold Fish
+Evening Redness in the West
+The Chicken Tree
+Indian Summer
+Child of God
 

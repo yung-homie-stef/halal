@@ -15,7 +15,6 @@ public class Narrator : MonoBehaviour
     public GameObject chop;
     public string[] lines;
     public float textSpeed;
-    public GameObject blockingObject = null;
     public Narration_Trigger narrationTriggerObject = null;
     [HideInInspector]
     public bool chatting = false;
