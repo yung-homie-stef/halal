@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Asset Complete/Beach.unity
     guid: 9f7ebaa6cefac514483c9b6bd95fedb1
   - enabled: 1
-    path: Assets/Scenes/Levels/Suburbia.unity
+    path: Assets/Scenes/Levels/Asset Complete/Suburbia.unity
     guid: 414147edd7fb6dd498eb6d6a0773fcd7
   - enabled: 1
     path: Assets/Scenes/Levels/Centipede.unity

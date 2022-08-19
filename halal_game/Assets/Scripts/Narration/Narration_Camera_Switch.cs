@@ -20,7 +20,7 @@ public class Narration_Camera_Switch : Narration_Trigger
         if (controllerToActivate != null)
         controllerToActivate.enabled = true;
 
-        lerpScript.LerpCamera(currentCamera);
+        lerpScript.LerpCamera(controllerToDeactivate);
 
         Destroy(gameObject);
     }

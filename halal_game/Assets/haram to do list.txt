@@ -7,13 +7,15 @@ Valley - COMPLETE
 Calvary - COMPLETE
 Shit - COMPLETE
 Church - COMPLETE
+Centipede - COMPLETE
+
 
 Calvary 
-Camera 1 initial position - 0,0,0            rotation - 0, 0, 0
-Camera 1 end position - 68.6, 0, -41.7,      rotation - 0, 90, 0
+Camera 1 initial position - -0.7,0,0            rotation - 0, 0, 0
+Camera 1 end position - 68.6, 0, -41,      rotation - 0, 90, 0
 
 Camera 2 initial position - -10.5, 0, -2.8,  rotation - 0, -434, 0
-Camera 2 end position - 10.4, 0, -27.8,    rotation - 0, -576, 0
+Camera 2 end position - 10.53, 0, -27.875,    rotation - 0, -576, 0
 
 Camera 3 initial position - 52.9, 2.875, 114, rotation - 0, 473, 0
 Camera 3 end position -   121.8, 0.785, 68.5,    rotation - 0, 551.7, 0
@@ -25,6 +27,9 @@ Camera 3 end position -   121.8, 0.785, 68.5,    rotation - 0, 551.7, 0
 Cold Fish
 Evening Redness in the West
 The Chicken Tree
+Great Satan
 Indian Summer
 Child of God
+Gomorrah
+
 

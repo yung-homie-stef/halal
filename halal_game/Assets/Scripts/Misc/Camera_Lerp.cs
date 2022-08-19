@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TheFirstPerson;
 
 public class Camera_Lerp : MonoBehaviour
 {
-    private Camera lerpedCamera;
+    private FPSController lerpedCharacter;
     private bool hasSwapped = false;
     private Quaternion originalRotation;
     private float timeCount = 0.0f;
@@ -18,22 +19,22 @@ public class Camera_Lerp : MonoBehaviour
     {
         if (hasSwapped)
         {
-            lerpedCamera.transform.position = Vector3.Lerp(lerpedCamera.transform.position, newCameraPosition, lerpSpeed * Time.deltaTime);
+            lerpedCharacter.transform.position = Vector3.Lerp(lerpedCharacter.transform.position, newCameraPosition, lerpSpeed * Time.deltaTime);
             // Save the original rotation
 
             Quaternion newQuaternion = Quaternion.Euler(newCameraRotation.x, newCameraRotation.y, newCameraRotation.z);
             // Do your stuff here
-            lerpedCamera.transform.rotation = Quaternion.Lerp(originalRotation, newQuaternion, timeCount);
+            lerpedCharacter.transform.rotation = Quaternion.Lerp(originalRotation, newQuaternion, timeCount);
             timeCount = timeCount + Time.deltaTime;
         }
     }
 
-    public void LerpCamera(Camera cam)
+    public void LerpCamera(FPSController controller)
     {
-        lerpedCamera = cam;
-        lerpedCamera.transform.parent = null;
+        lerpedCharacter = controller;
+        lerpedCharacter.transform.parent = null;
         hasSwapped = true;
-        originalRotation = cam.transform.rotation;
+        originalRotation = controller.transform.rotation;
         
 
     }
