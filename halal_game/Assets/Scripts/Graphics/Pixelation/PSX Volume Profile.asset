@@ -36,6 +36,30 @@ MonoBehaviour:
   rounded:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &-5602415428713204134
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221518ef91623a7438a71fef23660601, type: 3}
+  m_Name: WhiteBalance
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  temperature:
+    m_OverrideState: 1
+    m_Value: -9
+    min: -100
+    max: 100
+  tint:
+    m_OverrideState: 1
+    m_Value: 15
+    min: -100
+    max: 100
 --- !u!114 &-5550648841453970296
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -94,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
@@ -152,6 +176,7 @@ MonoBehaviour:
   - {fileID: 4307764023119292024}
   - {fileID: -5550648841453970296}
   - {fileID: -9200522940330770115}
+  - {fileID: -5602415428713204134}
 --- !u!114 &4307764023119292024
 MonoBehaviour:
   m_ObjectHideFlags: 3
