@@ -8,6 +8,8 @@ public class Collect_Interaction : Interaction
 {
     public UnityEvent onAllCollected;
 
+    [SerializeField]
+    private int collectionNumber = 0;
     private static int objectsCollected = 0;
 
     // Start is called before the first frame update
@@ -19,8 +21,9 @@ public class Collect_Interaction : Interaction
     public override void Interact()
     {
         objectsCollected++;
+        collectionNumber = objectsCollected;
 
-        if (objectsCollected == 3)
+        if (collectionNumber == 3)
         {
             onAllCollected.Invoke();
         }

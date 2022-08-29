@@ -13,8 +13,6 @@ public class Drag_Slot : MonoBehaviour, IDropHandler
     public UnityEvent OnRitualCardComplete;
     public CanvasGroup canvasGroup;
 
-    public Image newImage;
-
     public void OnDrop(PointerEventData eventData)
     {
        if (eventData.pointerDrag != null)

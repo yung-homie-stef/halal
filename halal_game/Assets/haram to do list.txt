@@ -1,15 +1,5 @@
-ASSETS NEEDED
 
-Suburbia - New houses, object to interact with
-Chickens - COMPLETE
-Beach - COMPLETE
-Valley - COMPLETE
-Calvary - COMPLETE
-Shit - COMPLETE
-Church - COMPLETE
-Centipede - COMPLETE
-
-
+///////// CALVARY CAMERAS
 Calvary 
 Camera 1 initial position - -0.7,0,0            rotation - 0, 0, 0
 Camera 1 end position - 68.6, 0, -41,      rotation - 0, 90, 0
@@ -22,14 +12,26 @@ Camera 3 end position -   121.8, 0.785, 68.5,    rotation - 0, 551.7, 0
 
 
 
+TO-DO
+Church ("Haram") - Asset Complete
+Beach ("Cold Fish") - Asset Complete
+Shit ("Gomorrah") - Asset Complete
+Calvary ("Evening Redness in the West") - Asset Complete
 
+Chickens ("The Chicken Tree") - Animate chickens
 
-Cold Fish
-Evening Redness in the West
-The Chicken Tree
-Great Satan
-Indian Summer
-Child of God
-Gomorrah
+Centipede - potentially more visual flair
+Suburb ("Indian Summer") - Furnish houses properly, add church decor, create new object to interact with after level completion. blood VFX
+Valley ("Child of God") - Test game flow with item collecting, finish implementing sequence of revolving prayer card door
+Snow ("Blood on the Ice Shelf") - Ice cave near end of glaciers leading to end of level
+
+Pig voice SFX script and audio soundbites
+Completing dialogue for pig in most of the level
+Script for level transitions with title cards
+Object to indicate level is blocked until dialogue is gone
+Accessibility (volume, sensitivity, dyslexic text)
+Fix text line skipping
+Sprinting
+
 
 

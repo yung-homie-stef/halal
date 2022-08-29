@@ -28,6 +28,11 @@ public class Centipedes : MonoBehaviour
         insectIndex++;
     }
 
+    public void StopCrawling()
+    {
+        stillCrawling = false;
+    }
+
     public void InvokeCrawl(int index)
     {
         StartCoroutine(RestartCrawl(index, crawlTimerIntervals[timerIndex]));
