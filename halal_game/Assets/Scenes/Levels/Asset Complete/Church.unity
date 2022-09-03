@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6263638, g: 0.36957714, b: 0.08238172, a: 1}
+  m_IndirectSpecularColor: {r: 0.6263647, g: 0.36956972, b: 0.08237598, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3635,12 +3635,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - 'Welcome, to the Church of Adam''s Rib. We''ve been expecting you, though...
-    perhaps it''s more fitting to say you''ve expected us. '
+  - 'Welcome, to the Church of Adam''s Rib. We''ve been expecting you, though perhaps
+    it''s more fitting to say you''ve expected us. '
   - This intersection is long overdue, I'm surprised your lust for punishment hasn't
     expired.
-  - Your self-disgust is palpable, seeping out your every pore. I can hear the squeals...they're
-    beautiful. Your kind make for the best lackeys.
   - There's a hunger you possess, burning a hole in your gut. Teeth, spittle, stomach,
     begging to be put to work. The most castrated hound in the kennel, but a dog
     all the same.

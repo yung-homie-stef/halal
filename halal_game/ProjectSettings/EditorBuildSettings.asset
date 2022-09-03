@@ -24,9 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Asset Complete/Suburbia.unity
     guid: 414147edd7fb6dd498eb6d6a0773fcd7
   - enabled: 1
-    path: Assets/Scenes/Levels/Centipede.unity
-    guid: 7c99386eb1791cc4ebbd5388ae4decff
-  - enabled: 1
     path: Assets/Scenes/Levels/Asset Complete/Shit.unity
     guid: 1524a5d76d44a204a94d1b2a121f07b9
   - enabled: 1
@@ -38,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Asset Complete/Chickens.unity
     guid: 9b80948e2f33862438658659d7b4ffb5
+  - enabled: 1
+    path: Assets/Scenes/Levels/Bugs.unity
+    guid: e66ebc24b867ca544874af4a26e51fc2
+  - enabled: 1
+    path: Assets/Scenes/Levels/Asset Complete/Snow.unity
+    guid: 82ad38b7ecf835e4bb686ac31ba7316e
   m_configObjects: {}

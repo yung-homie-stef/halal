@@ -38,9 +38,9 @@ public class Main_Menu : MonoBehaviour
     }
     public void RevertText()
     {
-        play.alignment = TextAlignmentOptions.Left;
-        settings.alignment = TextAlignmentOptions.Left;
-        quit.alignment = TextAlignmentOptions.Left;
+        play.alignment = TextAlignmentOptions.Center;
+        settings.alignment = TextAlignmentOptions.Center;
+        quit.alignment = TextAlignmentOptions.Center;
     }
     public void OpenSettings()
     {

@@ -17,12 +17,14 @@ Church ("Haram") - Asset Complete
 Beach ("Cold Fish") - Asset Complete
 Shit ("Gomorrah") - Asset Complete
 Calvary ("Evening Redness in the West") - Asset Complete
+Snow ("Blood on the Ice Shelf") - Asset Complete
+Centipede ("The Other White Meat") - Asset Complete
+
 Chickens ("The Chicken Tree") - Animate chickens
 
-Centipede - potentially more visual flair
 Suburb ("Indian Summer") - Furnish houses properly, add church decor, create new object to interact with after level completion. blood VFX
 Valley ("Child of God") - Black exit hallway
-Snow ("Blood on the Ice Shelf") - Ice cave near end of glaciers leading to end of level
+
 
 Pig voice SFX script and audio soundbites
 Completing dialogue for pig in most of the level

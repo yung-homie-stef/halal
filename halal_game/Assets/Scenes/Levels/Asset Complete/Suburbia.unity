@@ -16101,8 +16101,8 @@ MonoBehaviour:
     relentless divine light more mockery than warmth.
   - It's toxic, chocolate in a dog's stomach. The bile duct of this block is overworked,
     you must filtrate it before it's washed away.
-  - There are three little piggies who have festered in this wound for far too long,
-    bring the excision to them. See what it means to assume the role of the butcher.
+  - There are three little piggies who have festered in this wound for far too long.
+    Bring the excision to them. See what it means to assume the role of the butcher.
     Turn their castles into tombs.
   objectsToModify: []
   appearOrNot: 
@@ -19784,9 +19784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Bled with the practiced ease of an old surgeon, that's one less lung sucking
-    the miasma out this compound. Good riddance.
-  - 'How does it feel to put your miserable flesh and blood to use for once? '
+  - All of life is but a moment 'fore the grave
+  - 
   - 
   componentNames: []
   objectsWithScriptsToEnable: []
