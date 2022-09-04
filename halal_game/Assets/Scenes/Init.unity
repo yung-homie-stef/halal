@@ -494,5 +494,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: persistent_canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: dyslexicFont
+      value: 
+      objectReference: {fileID: 11400000, guid: ec59d72cfe5eee84bb60df44ee3f524c,
+        type: 2}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: linLibertine
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b0366965791aa547918b1d9f1243161,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f966b264f5f5ac40b688bd682838356, type: 3}

@@ -29,9 +29,8 @@ Suburb ("Indian Summer") - Furnish houses properly, add church decor, create new
 Pig voice SFX script and audio soundbites
 Completing dialogue for pig in most of the level
 Object to indicate level is blocked until dialogue is gone
-Accessibility (volume, sensitivity, dyslexic text)
+Volume settings
 Fix text line skipping
-Sprinting
 
 
 

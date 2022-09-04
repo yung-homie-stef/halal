@@ -252,7 +252,7 @@ namespace TheFirstPerson
         //Input Name Defaults (assuming default unity axes are set up)
         string jumpBtn = "Jump";
         string crouchBtn = "Fire1";
-        string runBtn = "Fire3";
+        string runBtn = "Sprint";
         string unlockMouseBtn = "Cancel";
         string xInName = "Horizontal";
         string yInName = "Vertical";
@@ -308,6 +308,15 @@ namespace TheFirstPerson
 
             controllerInfo = GetInfo();
             ExecuteExtension(ExtFunc.Start);
+
+            sensitivity = PlayerPrefs.GetInt("Sensitivity");
+
+            if (PlayerPrefs.GetInt("SprintToggle") == 2)
+            {
+                sprintToggleStyle = true;
+            }
+            else
+                sprintToggleStyle = false;
 
         }
 

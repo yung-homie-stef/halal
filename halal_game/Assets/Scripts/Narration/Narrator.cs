@@ -16,6 +16,9 @@ public class Narrator : MonoBehaviour
     public string[] lines;
     public float textSpeed;
     public Narration_Trigger narrationTriggerObject = null;
+    public TMP_FontAsset dyslexicFont = null;
+    public TMP_FontAsset linLibertine = null;
+
     [HideInInspector]
     public bool chatting = false;
     [HideInInspector]
@@ -36,6 +39,13 @@ public class Narrator : MonoBehaviour
             Destroy(gameObject);
 
         DontDestroyOnLoad(this.gameObject);
+
+        if (PlayerPrefs.GetInt("Dyslexic") == 2)
+        {
+            textComponent.font = dyslexicFont;
+        }
+        else
+            textComponent.font = linLibertine;
     }
 
     void Start()

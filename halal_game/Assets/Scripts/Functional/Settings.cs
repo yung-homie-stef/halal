@@ -8,11 +8,9 @@ using UnityEngine.UI;
 public class Settings : MonoBehaviour
 {
     public TextMeshProUGUI back = null;
-    public TextMeshProUGUI FOVNum = null;
     public TextMeshProUGUI sensitivityNum = null;
-
-    public TMP_FontAsset linLibertine = null;
-    public TMP_FontAsset dyslexiaFont = null;
+    public Toggle dyslexicToggle = null;
+    public Toggle sprintToggle = null;
 
     [SerializeField]
     private int sensitivity = 5;
@@ -26,6 +24,31 @@ public class Settings : MonoBehaviour
     void Start()
     {
         _settings_Manager = Settings_Manager.GetSettingsManager();
+
+        if (!PlayerPrefs.HasKey("Sensitivity"))
+        {
+            PlayerPrefs.SetInt("Sensitivity", 5); // default sensitivity settings
+        }
+
+        if (!PlayerPrefs.HasKey("Dyslexic"))
+        {
+            PlayerPrefs.SetInt("Dyslexic", 1); 
+        }
+
+        if (!PlayerPrefs.HasKey("SprintToggle"))
+        {
+            PlayerPrefs.SetInt("SprintToggle", 1); 
+        }
+
+        if (PlayerPrefs.GetInt("Dyslexic") == 2)
+            dyslexicToggle.isOn = true;
+        else
+            dyslexicToggle.isOn = false;
+
+        if (PlayerPrefs.GetInt("SprintToggle") == 2)
+            sprintToggle.isOn = true;
+        else
+            sprintToggle.isOn = false;
     }
     public void BackSelected()
     {
@@ -42,6 +65,7 @@ public class Settings : MonoBehaviour
             if ( sensitivity < 10)
             {
                 sensitivity++;
+                PlayerPrefs.SetInt("Sensitivity", sensitivity); 
             }
         }
         else
@@ -49,6 +73,7 @@ public class Settings : MonoBehaviour
             if (sensitivity > 1)
             {
                 sensitivity--;
+                PlayerPrefs.SetInt("Sensitivity", sensitivity);
             }
         }
 
@@ -74,19 +99,21 @@ public class Settings : MonoBehaviour
         }
 
         _settings_Manager.FOV = 50 + (6 * FOV);
-        FOVNum.text = FOV.ToString();
     }
 
     public void SetSprintToggle(bool toggled)
     {
-        _settings_Manager.sprintToggle = toggled;
+        if (toggled)
+            PlayerPrefs.SetInt("SprintToggle", 2);
+        else
+            PlayerPrefs.SetInt("SprintToggle", 1);
     }
     public void SetDyslexicFont(bool fontFlag)
     {
         if (fontFlag)
-            Narrator.gameNarrator.textComponent.font = dyslexiaFont;
+            PlayerPrefs.SetInt("Dyslexic", 2);
         else
-            Narrator.gameNarrator.textComponent.font = linLibertine;
+            PlayerPrefs.SetInt("Dyslexic", 1);
     }
     public void SetLastOpenedMenu(GameObject menu)
     {

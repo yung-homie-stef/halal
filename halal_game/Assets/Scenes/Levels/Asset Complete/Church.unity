@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.62619483, g: 0.36954418, b: 0.082379244, a: 1}
+  m_IndirectSpecularColor: {r: 0.62618, g: 0.36948818, b: 0.082377926, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3332,6 +3332,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6268786117941654323, guid: e90e45ff6cb98a84fb1d909c284ce4f0,
         type: 3}
+      propertyPath: sprintMult
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6268786117941654323, guid: e90e45ff6cb98a84fb1d909c284ce4f0,
+        type: 3}
       propertyPath: jumpEnabled
       value: 0
       objectReference: {fileID: 0}
@@ -3348,6 +3353,11 @@ PrefabInstance:
     - target: {fileID: 6268786117941654323, guid: e90e45ff6cb98a84fb1d909c284ce4f0,
         type: 3}
       propertyPath: sprintEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6268786117941654323, guid: e90e45ff6cb98a84fb1d909c284ce4f0,
+        type: 3}
+      propertyPath: sprintToggleStyle
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6268786117941654324, guid: e90e45ff6cb98a84fb1d909c284ce4f0,
@@ -3782,6 +3792,7 @@ GameObject:
   - component: {fileID: 1121479557}
   - component: {fileID: 1121479556}
   - component: {fileID: 1121479560}
+  - component: {fileID: 1121479561}
   m_Layer: 5
   m_Name: title_canvas
   m_TagString: Untagged
@@ -3889,6 +3900,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1121479561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121479555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b829875fd4fce4694dbf82dfac107c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerEnabler: {fileID: 1806527095}
 --- !u!1 &1122359714 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 85ced2e567d47294e80ae5929e072be1,
