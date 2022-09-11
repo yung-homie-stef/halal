@@ -9,7 +9,7 @@ OcclusionCullingSettings:
     smallestHole: 0.25
     backfaceThreshold: 100
   m_SceneGUID: 8e9c68eeddc4fc142b09f757d42fcd5a
-  m_OcclusionCullingData: {fileID: 36300000, guid: 485099e3e77899f49a64dfffa3694eeb,
+  m_OcclusionCullingData: {fileID: 36300000, guid: 2315829eda4596248b311e20a584d640,
     type: 2}
 --- !u!104 &2
 RenderSettings:
@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.62618506, g: 0.36952052, b: 0.0823749, a: 1}
+  m_IndirectSpecularColor: {r: 0.62634355, g: 0.3695598, b: 0.08237966, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4122,8 +4122,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2143351618}
-  - {fileID: 77205895}
   - {fileID: 1948864396}
+  - {fileID: 77205895}
   m_Father: {fileID: 1647735834}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4689,7 +4689,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.26216796, y: -11.611335, z: -0.13852586}
+  m_ConnectedAnchor: {x: -4.273237, y: 5.295724, z: -0.89443064}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -5468,7 +5468,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1459484578}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1948864397
 MonoBehaviour:
