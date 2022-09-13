@@ -46,6 +46,8 @@ public class Narrator : MonoBehaviour
         }
         else
             textComponent.font = linLibertine;
+
+        
     }
 
     void Start()
@@ -93,6 +95,7 @@ public class Narrator : MonoBehaviour
     private IEnumerator TypeOutDialogue()
     {
         chatting = true;
+        
 
         foreach (char c in lines[_textIndex].ToCharArray())
         {
