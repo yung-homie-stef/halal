@@ -24,6 +24,8 @@ public class Narrator : MonoBehaviour
     [HideInInspector]
     public bool triggered = false;
 
+    [SerializeField]
+    private int characterCount = 0;
 
     private int _textIndex = 0;
     private float _closeTime = 0.5f;
@@ -62,7 +64,7 @@ public class Narrator : MonoBehaviour
         if (chatting)
         #region Either auto-completing lines or going to next line
         {
-            if (textComponent.text == lines[_textIndex])
+            if (textComponent.maxVisibleCharacters >= characterCount)
             {
                 finishedSentenceIcon.enabled = true;
                 _animator.SetBool("is_talking", false);
@@ -77,7 +79,7 @@ public class Narrator : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     StopAllCoroutines();
-                    textComponent.text = lines[_textIndex];
+                    textComponent.maxVisibleCharacters = characterCount;
                 }
             }
         }
@@ -95,13 +97,22 @@ public class Narrator : MonoBehaviour
     private IEnumerator TypeOutDialogue()
     {
         chatting = true;
-        
+        textComponent.text = lines[_textIndex];
+        textComponent.maxVisibleCharacters = 0;
 
-        foreach (char c in lines[_textIndex].ToCharArray())
+        characterCount = lines[_textIndex].Length;
+
+        for (int i = 0; textComponent.maxVisibleCharacters < characterCount; i++)
         {
-            textComponent.text += c;
+            textComponent.maxVisibleCharacters++;
             yield return new WaitForSeconds(textSpeed);
         }
+
+        //foreach (char c in lines[_textIndex].ToCharArray())
+        //{
+        //    textComponent.text += c;
+        //    yield return new WaitForSeconds(textSpeed);
+        //}
     }
 
     void NextLine()

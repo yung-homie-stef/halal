@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6263351, g: 0.36955503, b: 0.08237582, a: 1}
+  m_IndirectSpecularColor: {r: 0.6263087, g: 0.3695667, b: 0.08238252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3970,8 +3970,25 @@ PrefabInstance:
     - target: {fileID: 28312105479089069, guid: 9f966b264f5f5ac40b688bd682838356,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: textSpeed
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: dyslexicFont
+      value: 
+      objectReference: {fileID: 11400000, guid: ec59d72cfe5eee84bb60df44ee3f524c,
+        type: 2}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: linLibertine
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b0366965791aa547918b1d9f1243161,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f966b264f5f5ac40b688bd682838356, type: 3}
 --- !u!1 &1339803391

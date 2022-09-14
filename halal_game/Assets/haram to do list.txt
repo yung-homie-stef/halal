@@ -9,8 +9,8 @@ Calvary ("Evening Redness in the West") - Asset Complete
 Snow ("Blood on the Ice Shelf") - Asset Complete
 Centipede ("The Other White Meat") - Asset Complete
 Valley ("Child of God") - Asset Complete
+Chickens ("The Chicken Tree") - Asset Complete
 
-Chickens ("The Chicken Tree") - Animate chickens
 Suburb ("Indian Summer") - Furnish houses properly, add church decor, create new object to interact with after level completion. blood VFX
 
 
@@ -24,7 +24,7 @@ Calvary ("Evening Redness in the West") -
 Snow ("Blood on the Ice Shelf") - 
 Centipede ("The Other White Meat") - 
 Valley ("Child of God") - 
-Suburb ("Indian Summer") - Writing Complryr
+Suburb ("Indian Summer") - Writing Complete
 
 
 
@@ -34,7 +34,6 @@ Pig voice SFX script and audio soundbites
 Completing dialogue for pig in most of the level
 Object to indicate level is blocked until dialogue is gone
 Volume settings
-Fix text line skipping
 
 
 

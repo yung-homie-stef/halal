@@ -349,11 +349,13 @@ MonoBehaviour:
   textComponent: {fileID: 28312105370794377}
   chop: {fileID: 28312105769347607}
   lines: []
-  textSpeed: 0.05
-  blockingObject: {fileID: 0}
+  textSpeed: 0.06
   narrationTriggerObject: {fileID: 0}
+  dyslexicFont: {fileID: 11400000, guid: ec59d72cfe5eee84bb60df44ee3f524c, type: 2}
+  linLibertine: {fileID: 11400000, guid: 4b0366965791aa547918b1d9f1243161, type: 2}
   chatting: 0
   triggered: 0
+  characterCount: 0
 --- !u!1 &28312105500756699
 GameObject:
   m_ObjectHideFlags: 0
