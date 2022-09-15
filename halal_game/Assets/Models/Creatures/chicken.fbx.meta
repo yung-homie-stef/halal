@@ -7,33 +7,25 @@ ModelImporter:
       74: 1827226128182048838
     second: chicken_walk
   - first:
-      74: -4727392650459335809
-    second: chicken_one_peck
+      74: 8081231578925818965
+    second: chicken_1_peck
   - first:
-      74: 1338772622191137155
-    second: chicken_two_peck
+      74: -7407610584834184284
+    second: chicken_2_peck
   - first:
-      74: -20518180840117732
-    second: chicken_look_1
+      74: 6128010465827485532
+    second: chicken_look
   - first:
-      74: -7101508280629967732
-    second: chicken_look_2
-  - first:
-      74: -961944113628502157
-    second: chicken_look_3
+      74: -203980385726766306
+    second: chicken_idle
   - first:
       74: 5038700433038068232
     second: chicken_nest
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: white_hen
-    second: {fileID: 2100000, guid: 7f4164366eb3cd44a834e3c05a760f2c, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
-    materialName: 1
-    materialSearch: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -87,11 +79,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: chicken_one_peck
+      name: chicken_1_peck
       takeName: Take 001
       internalID: 0
       firstFrame: 50
-      lastFrame: 57
+      lastFrame: 65
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -116,11 +108,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: chicken_two_peck
+      name: chicken_2_peck
       takeName: Take 001
       internalID: 0
       firstFrame: 65
-      lastFrame: 77
+      lastFrame: 86
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -145,18 +137,18 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: chicken_look_1
+      name: chicken_look
       takeName: Take 001
       internalID: 0
       firstFrame: 86
-      lastFrame: 102
+      lastFrame: 160
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -174,47 +166,18 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: chicken_look_2
+      name: chicken_idle
       takeName: Take 001
       internalID: 0
-      firstFrame: 120
-      lastFrame: 135
+      firstFrame: 170
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: chicken_look_3
-      takeName: Take 001
-      internalID: 0
-      firstFrame: 145
-      lastFrame: 169
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -235,8 +198,8 @@ ModelImporter:
       name: chicken_nest
       takeName: Take 001
       internalID: 0
-      firstFrame: 170
-      lastFrame: 220
+      firstFrame: 201
+      lastFrame: 260
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

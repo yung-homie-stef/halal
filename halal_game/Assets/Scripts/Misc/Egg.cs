@@ -24,12 +24,13 @@ public class Egg : MonoBehaviour
         meshRenderer.enabled = false;
         rb.useGravity = false;
         Destroy(rb);
-        Invoke("DestroyEgg", 10.0f);
         yolk.SetActive(true);
+        StartCoroutine(DestroyEgg(5.0f));
     }
 
-    private void DestroyEgg()
+    private IEnumerator DestroyEgg(float waitTime)
     {
-        Destroy(gameObject);
+        yield return new WaitForSeconds(waitTime);
+        Destroy(this.gameObject);
     }
 }
