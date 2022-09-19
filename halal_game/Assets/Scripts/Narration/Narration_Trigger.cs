@@ -1,23 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public abstract class Narration_Trigger : MonoBehaviour
 {
     public string[] sentences;
 
     public abstract void EndOfDialogueEvent();
+    public UnityEvent OnDialogueComplete;
 
-    private void OnTriggerEnter(Collider other)
+    protected void CheckIfNarratorIsTalking()
     {
-       if (other.tag == "Player")
-        {
             if (!Narrator.gameNarrator.triggered)
             {
                 StartTalking();
                 Narrator.gameNarrator.narrationTriggerObject = this;
             }
-        }
+    }
+
+    public void SetSentences(NonlinearPhrases words)
+    {
+        sentences = words.nonlinearPhrases;
     }
 
     public virtual void StartTalking()
@@ -30,6 +34,8 @@ public abstract class Narration_Trigger : MonoBehaviour
         {
             Narrator.gameNarrator.lines[i] = sentences[i];
         }
+
+        OnDialogueComplete.Invoke();
 
         Narrator.gameNarrator.StartDialogue();
     }

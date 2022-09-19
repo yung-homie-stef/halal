@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f79956f8474a346a05913fd65a7939, type: 3}
+  m_Name: Valley_3
+  m_EditorClassIdentifier: 
+  nonlinearPhrases:
+  - Frollicking in the fields, suckling from the teat, amounting to little beyond
+    a slow-roasted shank or gyro filling. Just a quick and merciful demise once the
+    curved blade cuts.
+  - Instead it is thrown to the lions and picked clean from its bones. Eaten alive
+    by the same maws that no sooner sing its praise before returning for seconds.
+  - Poor thing should have just been laid out to pasture. There's nothing to save
+    in Man.

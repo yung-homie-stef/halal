@@ -25,6 +25,8 @@ public class Narration_Camera_Switch : Narration_Trigger
 
         characterController.enabled = false;
 
+        OnDialogueComplete.Invoke();
+
         Destroy(gameObject);
     }
 

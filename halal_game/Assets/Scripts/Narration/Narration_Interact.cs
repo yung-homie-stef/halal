@@ -15,6 +15,8 @@ public class Narration_Interact : Narration_Trigger
             interactiveObjects[i].enabled = enabledOrNot[i];
         }
 
+        OnDialogueComplete.Invoke();
+
         Destroy(gameObject);
     }
 
