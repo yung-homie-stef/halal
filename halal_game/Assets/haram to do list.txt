@@ -22,17 +22,15 @@ Chickens ("The Chicken Tree") - Writing Complete
 Shit ("Gomorrah") - Writing Complete
 Calvary ("Evening Redness in the West") - Writing Complete
 Suburb ("Indian Summer") - Writing Complete
-Snow ("Blood on the Ice Shelf") - 
-Centipede ("The Other White Meat") - 
-Valley ("Child of God") - 
+Snow ("Blood on the Ice Shelf") - Writing Complete
+Centipede ("The Other White Meat") - Writing Complete
+Valley ("Child of God") - Writing Complete
 
 
 
 
 TO-DO // MISC
 ---------------------
-Pig voice SFX script and audio soundbites
-Completing dialogue for pig in most of the level
 Object to indicate level is blocked until dialogue is gone
 Volume settings
 

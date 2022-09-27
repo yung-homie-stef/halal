@@ -496,6 +496,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
         type: 3}
+      propertyPath: textSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
       propertyPath: dyslexicFont
       value: 
       objectReference: {fileID: 11400000, guid: ec59d72cfe5eee84bb60df44ee3f524c,
@@ -506,5 +511,40 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 4b0366965791aa547918b1d9f1243161,
         type: 2}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: maximumPitch
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: minimumPitch
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: talkingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a5ade0e613e813d45bdda803dcac8a4f, type: 3}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: makePredictable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: dialogueSoundFrequency
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: talkingSounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: talkingSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: a5ade0e613e813d45bdda803dcac8a4f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f966b264f5f5ac40b688bd682838356, type: 3}

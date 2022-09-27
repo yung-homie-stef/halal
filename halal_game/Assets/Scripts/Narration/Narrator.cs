@@ -10,6 +10,7 @@ public class Narrator : MonoBehaviour
     // singleton
     public static Narrator gameNarrator;
 
+    [Header("Text")]
     public Image finishedSentenceIcon;
     public TextMeshProUGUI textComponent;
     public GameObject chop;
@@ -29,7 +30,23 @@ public class Narrator : MonoBehaviour
 
     private int _textIndex = 0;
     private float _closeTime = 0.5f;
-    
+
+    [Header("Audio")]
+    [SerializeField]
+    private AudioClip[] talkingSounds;
+    private AudioSource audioSource;
+    [SerializeField]
+    private bool _stopAudioSource = true;
+    public int dialogueSoundFrequency = 3;
+    [SerializeField]
+    [Range(-3, 3)]
+    private float _minimumPitch;
+    [Range(-3, 3)]
+    [SerializeField]
+    private float _maximumPitch = 3.0f;
+    public bool makePredictable = false;
+
+
     private Animator _animator = null;
     private GameObject pig_textbox = null;
 
@@ -49,7 +66,8 @@ public class Narrator : MonoBehaviour
         else
             textComponent.font = linLibertine;
 
-        
+        audioSource = this.gameObject.AddComponent<AudioSource>();
+
     }
 
     void Start()
@@ -104,15 +122,12 @@ public class Narrator : MonoBehaviour
 
         for (int i = 0; textComponent.maxVisibleCharacters < characterCount; i++)
         {
+            PlayDialogueSound(textComponent.maxVisibleCharacters, textComponent.text[textComponent.maxVisibleCharacters]);
             textComponent.maxVisibleCharacters++;
             yield return new WaitForSeconds(textSpeed);
         }
 
-        //foreach (char c in lines[_textIndex].ToCharArray())
-        //{
-        //    textComponent.text += c;
-        //    yield return new WaitForSeconds(textSpeed);
-        //}
+
     }
 
     void NextLine()
@@ -149,5 +164,47 @@ public class Narrator : MonoBehaviour
     public void UnhideDialogue()
     {
         pig_textbox.SetActive(true);
+    }
+
+    private void PlayDialogueSound(int displayedCharacterCount, char currentCharacter)
+    {
+        if (displayedCharacterCount % dialogueSoundFrequency == 0)
+        {
+
+            if (_stopAudioSource)
+            {
+                audioSource.Stop();
+            }
+
+            AudioClip randomSoundClip = null;
+
+            if (makePredictable)
+            {
+                int hashCode = currentCharacter.GetHashCode();
+                int predictableIndex = hashCode % talkingSounds.Length;
+                randomSoundClip = talkingSounds[predictableIndex];
+                int minimumPitchInteger = (int)(_minimumPitch * 100);
+                int maximumPitchInteger = (int)(_maximumPitch * 100);
+                int pitchRangeInt = maximumPitchInteger - minimumPitchInteger;
+
+                if (pitchRangeInt != 0)
+                {
+                    int predictablePitchInt = (hashCode % pitchRangeInt) + minimumPitchInteger;
+                    float predictablePitch = predictablePitchInt / 100f;
+                    audioSource.pitch = predictablePitchInt;
+                }
+                else
+                    audioSource.pitch = _minimumPitch;
+
+            }
+            else
+            {
+                randomSoundClip = talkingSounds[UnityEngine.Random.Range(0, talkingSounds.Length)];
+                audioSource.pitch = UnityEngine.Random.Range(_minimumPitch, _maximumPitch);
+            }
+
+           
+            audioSource.PlayOneShot(randomSoundClip);
+        }
     }
 }
