@@ -261,6 +261,8 @@ namespace TheFirstPerson
 
         TFPInfo controllerInfo;
 
+        private bool _isPaused = false;
+
         void Start()
         {
             controller = GetComponent<CharacterController>();
@@ -322,7 +324,7 @@ namespace TheFirstPerson
 
         void Update()
         {
-            if(definedByHeight && (originalJT != maxJumpTime || originalMaxJH != maxJumpHeight || originalMinJH != minJumpHeight))
+            if (definedByHeight && (originalJT != maxJumpTime || originalMaxJH != maxJumpHeight || originalMinJH != minJumpHeight))
             {
                 RecalculateJumpValues();
                 originalJT = maxJumpTime;
@@ -355,6 +357,23 @@ namespace TheFirstPerson
                 UpdateMovement(Time.deltaTime);
             }
             ExecuteExtension(ExtFunc.PostUpdate);
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (!_isPaused)
+                {
+                    Global_Settings_Manager.instance.pauseMenu.SetActive(true);
+                    Time.timeScale = 0.0f;
+                    _isPaused = true;
+                }
+                else
+                {
+                    Global_Settings_Manager.instance.pauseMenu.SetActive(false);
+                    Time.timeScale = 1.0f;
+                    _isPaused = false;
+                }
+
+            }
         }
 
         void FixedUpdate()

@@ -66,7 +66,7 @@ public class Narrator : MonoBehaviour
         else
             textComponent.font = linLibertine;
 
-        audioSource = this.gameObject.AddComponent<AudioSource>();
+        audioSource = gameObject.GetComponent<AudioSource>();
 
     }
 

@@ -11,18 +11,13 @@ public class Main_Menu : MonoBehaviour
     public TextMeshProUGUI settings = null;
     public TextMeshProUGUI quit = null;
 
-    public GameObject settingsMenu = null;
     public GameObject startMenu = null;
     public Image blowfly = null;
-
-    private Settings _settings = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        _settings = settingsMenu.GetComponent<Settings>();
-
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
     }
     public void PlaySelected()
     {
@@ -44,15 +39,15 @@ public class Main_Menu : MonoBehaviour
     }
     public void OpenSettings()
     {
-        settingsMenu.SetActive(true);
-        _settings.SetLastOpenedMenu(startMenu);
+        Global_Settings_Manager.instance.settingsMenu.SetActive(true);
+        Global_Settings_Manager.instance.settingsMenu.GetComponent<Settings>().SetLastOpenedMenu(startMenu);
         startMenu.SetActive(false);
         RevertText();
     }
     public void PlayGame()
     {
         startMenu.SetActive(false);
-        settingsMenu.SetActive(false);
+        Global_Settings_Manager.instance.settingsMenu.SetActive(false);
         blowfly.enabled = true;
         StartCoroutine(LoadIntroSequence(4.0f));
     }

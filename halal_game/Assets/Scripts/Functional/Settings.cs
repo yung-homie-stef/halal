@@ -9,21 +9,24 @@ public class Settings : MonoBehaviour
 {
     public TextMeshProUGUI back = null;
     public TextMeshProUGUI sensitivityNum = null;
+    public TextMeshProUGUI musicVolNum = null;
+    public TextMeshProUGUI sfxVolNum = null;
+
     public Toggle dyslexicToggle = null;
     public Toggle sprintToggle = null;
 
     [SerializeField]
     private int sensitivity = 5;
     [SerializeField]
-    private int FOV = 5;
+    private int musicVolume = 5;
+    [SerializeField]
+    private int sfxVolume = 5;
 
-    private Settings_Manager _settings_Manager = null;
     private GameObject lastOpenedScreen = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        _settings_Manager = Settings_Manager.GetSettingsManager();
 
         if (!PlayerPrefs.HasKey("Sensitivity"))
         {
@@ -66,6 +69,7 @@ public class Settings : MonoBehaviour
             {
                 sensitivity++;
                 PlayerPrefs.SetInt("Sensitivity", sensitivity); 
+                Global_Settings_Manager.instance.sensitivity = sensitivity;
             }
         }
         else
@@ -74,31 +78,61 @@ public class Settings : MonoBehaviour
             {
                 sensitivity--;
                 PlayerPrefs.SetInt("Sensitivity", sensitivity);
+                Global_Settings_Manager.instance.sensitivity = sensitivity;
             }
         }
 
-        _settings_Manager.sensitivity = sensitivity;
         sensitivityNum.text = sensitivity.ToString();
     }
 
-    public void SetFOV(bool _increase)
+    #region MUSIC VOLUME
+    public void SetMusicVolume(bool _increase)
     {
         if (_increase)
         {
-            if (FOV < 10)
+            if (musicVolume < 10)
             {
-                FOV++;
+                musicVolume++;
+                Global_Settings_Manager.instance.musicVolume = musicVolume;
+                Global_Settings_Manager.instance.SetMusicMixerVolume();
             }
         }
         else
         {
-            if (FOV > 1)
+            if (musicVolume > 1)
             {
-                FOV--;
+                musicVolume--;
+                Global_Settings_Manager.instance.musicVolume = musicVolume;
+                Global_Settings_Manager.instance.SetMusicMixerVolume();
             }
         }
 
-        _settings_Manager.FOV = 50 + (6 * FOV);
+        musicVolNum.text = musicVolume.ToString();
+    }
+    #endregion
+
+    public void SetSFXVolume(bool _increase)
+    {
+        if (_increase)
+        {
+            if (sfxVolume < 10)
+            {
+                sfxVolume++;
+                Global_Settings_Manager.instance.fxVolume = sfxVolume;
+                Global_Settings_Manager.instance.SetFXMixerVolume();
+            }
+        }
+        else
+        {
+            if (sfxVolume > 1)
+            {
+                sfxVolume--;
+                Global_Settings_Manager.instance.fxVolume = sfxVolume;
+                Global_Settings_Manager.instance.SetFXMixerVolume();
+            }
+        }
+
+        sfxVolNum.text = sfxVolume.ToString();
     }
 
     public void SetSprintToggle(bool toggled)
