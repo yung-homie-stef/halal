@@ -261,8 +261,6 @@ namespace TheFirstPerson
 
         TFPInfo controllerInfo;
 
-        private bool _isPaused = false;
-
         void Start()
         {
             controller = GetComponent<CharacterController>();
@@ -360,17 +358,17 @@ namespace TheFirstPerson
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (!_isPaused)
+                if (!Global_Settings_Manager.instance.isPaused)
                 {
                     Global_Settings_Manager.instance.pauseMenu.SetActive(true);
                     Time.timeScale = 0.0f;
-                    _isPaused = true;
+                    Global_Settings_Manager.instance.isPaused = true;
                 }
                 else
                 {
                     Global_Settings_Manager.instance.pauseMenu.SetActive(false);
                     Time.timeScale = 1.0f;
-                    _isPaused = false;
+                    Global_Settings_Manager.instance.isPaused = false;
                 }
 
             }

@@ -14,6 +14,8 @@ public class Global_Settings_Manager : MonoBehaviour
 
     public AudioMixer mixer;
 
+    public bool isPaused = false;
+
     public static Global_Settings_Manager instance = null;
 
     // Start is called before the first frame update
