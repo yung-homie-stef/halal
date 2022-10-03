@@ -12,7 +12,7 @@ Valley ("Child of God") - Asset Complete
 Chickens ("The Chicken Tree") - Asset Complete
 
 Suburb ("Indian Summer") - Furnish houses properly, add church decor, create new object to interact with after level completion. blood VFX
-Final ("Meat Solstice") - Finish object painting, place water, last podium are, crosses
+Final ("Meat Solstice") - last podium area
 
 
 TO-DO // DIALOGUE
