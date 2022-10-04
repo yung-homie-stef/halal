@@ -15,7 +15,7 @@ Suburb ("Indian Summer") - Furnish houses properly, add church decor, create new
 Final ("Meat Solstice") - last podium area
 
 
-TO-DO // DIALOGUE
+TO-DO // DIALOGUE (WRITING DONE)
 ---------------------
 Church ("Haram") - Writing Complete 
 Beach ("Cold Fish") - Writing Complete 
@@ -26,8 +26,7 @@ Suburb ("Indian Summer") - Writing Complete
 Snow ("Blood on the Ice Shelf") - Writing Complete
 Centipede ("The Other White Meat") - Writing Complete
 Valley ("Child of God") - Writing Complete
-
-Final ("Meat Solstice") - 
+Final ("Pork Belly") - Writing Complete
 
 
 
