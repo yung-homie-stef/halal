@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Pig_Wander;
+
 
 public class Chicken_Peck : MonoBehaviour
 {

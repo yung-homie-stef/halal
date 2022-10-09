@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4637f5dd4d0a140aff5361ff7d1dbb, type: 3}
+  m_Name: Grate
+  m_EditorClassIdentifier: 
+  footSounds:
+  - {fileID: 8300000, guid: 933f150c3aa4e954f8282df5172a6e1c, type: 3}
+  - {fileID: 8300000, guid: fe79c0069007fe5418111788854074ff, type: 3}
+  - {fileID: 8300000, guid: 8c6083cdc6e26dd4cbc4f3b4be5512e8, type: 3}
+  - {fileID: 8300000, guid: b701760056a6ebb48a3f49e8864c15ab, type: 3}
+  - {fileID: 8300000, guid: e0ffbb2b68acbf944b131a3ddb72add8, type: 3}
+  - {fileID: 8300000, guid: 19e4d52f6fbc9a549935c68036596d0e, type: 3}
+  - {fileID: 8300000, guid: 34a81a3ef6473ac4c8873969d35826e3, type: 3}
+  - {fileID: 8300000, guid: 6e58a56d8395323479fe490e573f111c, type: 3}
+  textures:
+  - {fileID: 2800000, guid: d78013032e2917346aaf96cde20d5090, type: 3}

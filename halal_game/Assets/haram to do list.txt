@@ -10,9 +10,10 @@ Snow ("Blood on the Ice Shelf") - Asset Complete
 Centipede ("The Other White Meat") - Asset Complete
 Valley ("Child of God") - Asset Complete
 Chickens ("The Chicken Tree") - Asset Complete
+Final ("Meat Solstice") - Asset Complete
 
 Suburb ("Indian Summer") - Furnish houses properly, add church decor, create new object to interact with after level completion. blood VFX
-Final ("Meat Solstice") - last podium area
+
 
 
 TO-DO // DIALOGUE (WRITING DONE)
@@ -29,11 +30,17 @@ Valley ("Child of God") - Writing Complete
 Final ("Pork Belly") - Writing Complete
 
 
-
-
-TO-DO // MISC
+SOUND FX NEEDED
 ---------------------
-Object to indicate level is blocked until dialogue is gone
+
+Beach - SOUNDS COMPLETED
+Church - SOUNDS COMPLETED
+
+Chickens:
+- Metal walking sounds
+- Dirt walking sounds
+- Machinery
+- Chicken sounds
 
 
 

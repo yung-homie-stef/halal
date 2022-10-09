@@ -912,13 +912,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7146336aa1e33534eb49dfd747fd0ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 5
-  musicVolume: 5
-  fxVolume: 5
   settingsMenu: {fileID: 1017576133}
   pauseMenu: {fileID: 948629799}
   mixer: {fileID: 24100000, guid: d608f4f8cb2c6a54fb25291d2f7ae4bc, type: 2}
   isPaused: 0
+  volumeValues:
+  - -80
+  - -20
+  - -14
+  - -10.45
+  - -8
+  - -6.02
+  - -4.4
+  - -3.1
+  - -1.94
+  - -0.92
+  - 0
 --- !u!1 &560698026
 GameObject:
   m_ObjectHideFlags: 0

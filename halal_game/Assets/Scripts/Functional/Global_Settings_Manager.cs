@@ -5,10 +5,6 @@ using UnityEngine.Audio;
 
 public class Global_Settings_Manager : MonoBehaviour
 {
-    public int sensitivity = 5;
-    public int musicVolume = 5;
-    public int fxVolume = 5;
-
     public GameObject settingsMenu;
     public GameObject pauseMenu;
 
@@ -29,15 +25,27 @@ public class Global_Settings_Manager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void SetMusicMixerVolume()
+    public void SetMusicMixerVolume(int vol)
     {
-        mixer.SetFloat("MusicVolume", (float)musicVolume);
-
-        // divide mixer volume values into a range from 1-10
+        //mixer.SetFloat("MusicVolume", volumeValues[vol]);
     }
 
-    public void SetFXMixerVolume()
+    public void SetFXVolume(int number)
     {
-        mixer.SetFloat("SFXVolume", (float)fxVolume);
+        int fxVolume = number;
+        Debug.Log(number);
+        SetFXMixerVolume(fxVolume);
+    }
+
+    public void SetMusicVolume(int number)
+    {
+        int musicVolume = number;
+        Debug.Log(number);
+        SetMusicMixerVolume(musicVolume);
+    }
+
+    public void SetFXMixerVolume(int vol)
+    {
+       // mixer.SetFloat("SFXVolume", volumeValues[vol]);
     }
 }

@@ -69,7 +69,6 @@ public class Settings : MonoBehaviour
             {
                 sensitivity++;
                 PlayerPrefs.SetInt("Sensitivity", sensitivity); 
-                Global_Settings_Manager.instance.sensitivity = sensitivity;
             }
         }
         else
@@ -78,7 +77,6 @@ public class Settings : MonoBehaviour
             {
                 sensitivity--;
                 PlayerPrefs.SetInt("Sensitivity", sensitivity);
-                Global_Settings_Manager.instance.sensitivity = sensitivity;
             }
         }
 
@@ -93,17 +91,17 @@ public class Settings : MonoBehaviour
             if (musicVolume < 10)
             {
                 musicVolume++;
-                Global_Settings_Manager.instance.musicVolume = musicVolume;
-                Global_Settings_Manager.instance.SetMusicMixerVolume();
+                Global_Settings_Manager.instance.SetMusicVolume(musicVolume);
+               
             }
         }
         else
         {
-            if (musicVolume > 1)
+            if (musicVolume > 0)
             {
                 musicVolume--;
-                Global_Settings_Manager.instance.musicVolume = musicVolume;
-                Global_Settings_Manager.instance.SetMusicMixerVolume();
+                Global_Settings_Manager.instance.SetMusicVolume(musicVolume);
+
             }
         }
 
@@ -118,17 +116,17 @@ public class Settings : MonoBehaviour
             if (sfxVolume < 10)
             {
                 sfxVolume++;
-                Global_Settings_Manager.instance.fxVolume = sfxVolume;
-                Global_Settings_Manager.instance.SetFXMixerVolume();
+                Global_Settings_Manager.instance.SetFXVolume(sfxVolume);
+
             }
         }
         else
         {
-            if (sfxVolume > 1)
+            if (sfxVolume > 0)
             {
                 sfxVolume--;
-                Global_Settings_Manager.instance.fxVolume = sfxVolume;
-                Global_Settings_Manager.instance.SetFXMixerVolume();
+                Global_Settings_Manager.instance.SetFXVolume(sfxVolume);
+
             }
         }
 

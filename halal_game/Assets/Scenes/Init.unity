@@ -546,5 +546,10 @@ PrefabInstance:
       propertyPath: talkingSounds.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: a5ade0e613e813d45bdda803dcac8a4f, type: 3}
+    - target: {fileID: 4058653135790177493, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f966b264f5f5ac40b688bd682838356, type: 3}

@@ -116,6 +116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controllerEnabler: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: d608f4f8cb2c6a54fb25291d2f7ae4bc, type: 2}
+  parameter: MusicVolume
+  fadeDuration: 5
 --- !u!95 &6133578876162323228
 Animator:
   serializedVersion: 3
