@@ -1051,6 +1051,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactTextImage: {fileID: 21300000, guid: c3757215d99402040a3851dc619e81bb, type: 3}
   sceneIndex: 12
+  musicAudioSource: {fileID: 0}
+  fadeDuration: 0
 --- !u!65 &96117495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14723,7 +14725,7 @@ PrefabInstance:
     - target: {fileID: 3649525948935343172, guid: 0d6a6fc0e119ae844bbb0ec4185e81eb,
         type: 3}
       propertyPath: m_text
-      value: THE OTHER WHITE MEAT
+      value: PORK BELLY
       objectReference: {fileID: 0}
     - target: {fileID: 8020908422772988397, guid: 0d6a6fc0e119ae844bbb0ec4185e81eb,
         type: 3}

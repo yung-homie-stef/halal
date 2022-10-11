@@ -35,12 +35,13 @@ SOUND FX NEEDED
 
 Beach - SOUNDS COMPLETED
 Church - SOUNDS COMPLETED
+Chickens - SOUNDS COMPLETED
 
-Chickens:
-- Metal walking sounds
-- Dirt walking sounds
-- Machinery
-- Chicken sounds
+Shit:
+Creek water
+geysers
+lots of flies
+weeds rustling
 
 
 
