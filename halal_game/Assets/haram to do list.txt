@@ -36,12 +36,12 @@ SOUND FX NEEDED
 Beach - SOUNDS COMPLETED
 Church - SOUNDS COMPLETED
 Chickens - SOUNDS COMPLETED
+Shit - SOUNDS COMPLETED
 
-Shit:
-Creek water
-geysers
-lots of flies
-weeds rustling
+Calvary:
+Desert dust storm
+Buzzards
+
 
 
 

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4637f5dd4d0a140aff5361ff7d1dbb, type: 3}
+  m_Name: Mud
+  m_EditorClassIdentifier: 
+  footSounds:
+  - {fileID: 8300000, guid: 1602f82fedeaafe4bae8bfd12f9264a1, type: 3}
+  - {fileID: 8300000, guid: 9a9456d3a887f2a46a459b6b61378315, type: 3}
+  - {fileID: 8300000, guid: 94174b423cc20ea4d82239840a7b5af9, type: 3}
+  - {fileID: 8300000, guid: befb2d2851bca2247aa0f588c66c0a74, type: 3}
+  - {fileID: 8300000, guid: 7c4ff3ec178153a4faa9e687d17d5e77, type: 3}
+  - {fileID: 8300000, guid: d86b0314aa1121a4791dd485a0b5b7c9, type: 3}
+  textures:
+  - {fileID: 2800000, guid: 702a9f0927e676648bc6fc7a58a369e4, type: 3}
+  - {fileID: 2800000, guid: 52397aba647bb574d91790abd9ed712e, type: 3}
+  - {fileID: 2800000, guid: b5ff4f49c6179cd488d928fb22006a94, type: 3}
+  - {fileID: 2800000, guid: 458fd594a5ce2c34ab5e3a07dc684e43, type: 3}
