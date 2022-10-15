@@ -37,9 +37,12 @@ Beach - SOUNDS COMPLETED
 Church - SOUNDS COMPLETED
 Chickens - SOUNDS COMPLETED
 Shit - SOUNDS COMPLETED
+Calvary -  SOUNDS COMPLETED
 
-Calvary:
-Desert dust storm
+Snow:
+- arctic water
+- arctic ambience
+- snow walking
 
 
 
