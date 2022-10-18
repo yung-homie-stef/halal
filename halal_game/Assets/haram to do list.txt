@@ -38,13 +38,18 @@ Church - SOUNDS COMPLETED
 Chickens - SOUNDS COMPLETED
 Shit - SOUNDS COMPLETED
 Calvary -  SOUNDS COMPLETED
-
-Snow:
-- arctic water
-- arctic ambience
-- snow walking
+Snow - SOUNDS COMPLETED
 
 
+Suburb:
+Shotgun sounds
+shell dispensing
+
+
+Bugs:
+Insects crawling
+Pig breathing
+Vomit sounds
 
 
 

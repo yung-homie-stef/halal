@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Kill : MonoBehaviour
 {
@@ -8,8 +9,14 @@ public class Kill : MonoBehaviour
     public Kill_Count _killCount = null;
     public bool isWandering = true;
 
+    public AudioClip[] deathNoises;
+
     [SerializeField]
     private float _deathForceMultiplier = 0.0f;
+    [SerializeField]
+    private Pig_Noises _pigNoiseScript = null;
+    [SerializeField]
+    private AudioSource _audioSource;
 
     private Rigidbody[] _pigRigidBodies = null;
     private CapsuleCollider[] _pigCapsuleCOlliders = null;
@@ -40,6 +47,9 @@ public class Kill : MonoBehaviour
             _killCount.TallyPigKill();
         }
 
+        Destroy(_pigNoiseScript);
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(deathNoises[Random.Range(0, deathNoises.Length)]);
         Die(point, direction);
     }
 

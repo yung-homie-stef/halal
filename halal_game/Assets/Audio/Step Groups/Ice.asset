@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4637f5dd4d0a140aff5361ff7d1dbb, type: 3}
+  m_Name: Ice
+  m_EditorClassIdentifier: 
+  footSounds:
+  - {fileID: 8300000, guid: acbb1e640f56ce24583088839f3133ee, type: 3}
+  - {fileID: 8300000, guid: 39cc3827836350946b356f8e82cfc2f6, type: 3}
+  - {fileID: 8300000, guid: 80e5c2bc9da77fa47be28f8bbb4caddf, type: 3}
+  - {fileID: 8300000, guid: 77723148f9b36f74da18fc2a923f3077, type: 3}
+  - {fileID: 8300000, guid: 1b4dd495bddf2b3428c25a8e712f692f, type: 3}
+  - {fileID: 8300000, guid: c02d4c8fe6d378e47a96f989b2d32b5b, type: 3}
+  - {fileID: 8300000, guid: fdbd5c63a711b57488f7341074a4731d, type: 3}
+  - {fileID: 8300000, guid: d7054767c124e4c4c871485a60a6fa57, type: 3}
+  textures:
+  - {fileID: 2800000, guid: 1332848fb5833734eaf38b072ebcb7ff, type: 3}
+  - {fileID: 2800000, guid: 8737a26eca1829c48a6ddc39ac8dd516, type: 3}
+  - {fileID: 2800000, guid: d06a36569978cc945a3b6b599edf0c88, type: 3}
+  - {fileID: 2800000, guid: 2c5631727423c8a408af7b13066bb5bb, type: 3}
