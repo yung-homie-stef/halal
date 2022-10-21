@@ -39,17 +39,11 @@ Chickens - SOUNDS COMPLETED
 Shit - SOUNDS COMPLETED
 Calvary -  SOUNDS COMPLETED
 Snow - SOUNDS COMPLETED
+Suburbia - SOUNDS COMPLETED
 
 
-Suburb:
-Shotgun sounds
-shell dispensing
-
-
-Bugs:
-Insects crawling
-Pig breathing
-Vomit sounds
+Valley:
+strained breathing
 
 
 

@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Shotgun : MonoBehaviour
 {
     public Camera playerCamera;
     public RaycastHit playerRaycastHit;
     public GameObject shotgun = null;
+    public AudioClip[] shellSounds;
+    public AudioClip[] pumpSounds;
+    public AudioClip[] shootSounds;
 
     private Vector3 _bulletPoint;
     private Vector3 _bulletDirection;
@@ -16,12 +20,15 @@ public class Shotgun : MonoBehaviour
     private bool _canShoot = true;
     private Animator _animator = null;
 
+    private AudioSource _audioSource = null;
+
     Kill _killScript = null;
     Destructible _destructibleScript = null;
 
     private void Start()
     {
         _animator = shotgun.GetComponent<Animator>();
+        _audioSource = gameObject.GetComponent<AudioSource>();
     }
 
 
@@ -69,6 +76,21 @@ public class Shotgun : MonoBehaviour
             StartCoroutine(Reload(1.16f));
         }
         
+    }
+
+    public void PlayShellShound()
+    {
+        _audioSource.PlayOneShot(shellSounds[Random.Range(0, shellSounds.Length)]);
+    }
+
+    public void PlayPumpSound()
+    {
+        _audioSource.PlayOneShot(pumpSounds[Random.Range(0, pumpSounds.Length)]);
+    }
+
+    public void PlayShootSound()
+    {
+        _audioSource.PlayOneShot(shootSounds[Random.Range(0, shootSounds.Length)]);
     }
 
     private IEnumerator Reload(float waitTime)
