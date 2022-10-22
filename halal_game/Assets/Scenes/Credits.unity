@@ -420,7 +420,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Johar Ibrahim
 
-    Vivian Rousseau'
+    Vivian Rousseau
+
+    Kabir Verman'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b0366965791aa547918b1d9f1243161, type: 2}
   m_sharedMaterial: {fileID: 2918490952175838504, guid: 4b0366965791aa547918b1d9f1243161,
@@ -650,7 +652,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.5, y: -97}
+  m_AnchoredPosition: {x: 9.5, y: -119.8}
   m_SizeDelta: {x: 335.73016, y: 34.77777}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850398822
@@ -786,7 +788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -47}
+  m_AnchoredPosition: {x: 0, y: -95.9}
   m_SizeDelta: {x: 389.00793, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1066549165
@@ -1125,7 +1127,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 221}
+  m_AnchoredPosition: {x: 0, y: 230.3}
   m_SizeDelta: {x: 217.75745, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1416771924
@@ -1557,13 +1559,16 @@ MonoBehaviour:
 
     Andres Serrano
 
-    Armand Hammer
+    billy woods
 
     clipping.
 
     Cormac
     McCarthy
 
+    Elucid
+
+    Francis Bacon
 
 '
   m_isRightToLeft: 0
