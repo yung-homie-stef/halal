@@ -50,15 +50,10 @@ Bugs - In Progress
 
 ULTIMATE FINAL TO-DO LIST
 ---------------------
-- Sort out volume mixer settings
 - Sound effects for interacting with items
-- Fix collision for chickens
 - Dress up suburbia level
 - Transition graphic
-- Finish Jesus skybox
-- Clean up other skyboxes
 - Finish soundtrack
-- Add delay before transition in Calvary
 - Optimization (occlusion and batching)
 - Testing
 

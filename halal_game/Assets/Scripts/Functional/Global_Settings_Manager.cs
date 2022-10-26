@@ -11,6 +11,7 @@ public class Global_Settings_Manager : MonoBehaviour
     public AudioMixer mixer;
 
     public bool isPaused = false;
+    public float globalSFXMixerVolume = 1.0f;
 
     public static Global_Settings_Manager instance = null;
 
@@ -25,27 +26,33 @@ public class Global_Settings_Manager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void SetMusicMixerVolume(int vol)
+    public void SetMusicMixerVolume(float vol)
     {
-        //mixer.SetFloat("MusicVolume", volumeValues[vol]);
+        mixer.SetFloat("MusicVolume", vol);
     }
 
-    public void SetFXVolume(int number)
+    public void SetFXVolume(float number)
     {
-        int fxVolume = number;
+        float fxVolume = number;
         Debug.Log(number);
         SetFXMixerVolume(fxVolume);
     }
 
-    public void SetMusicVolume(int number)
+    public void SetMusicVolume(float number)
     {
-        int musicVolume = number;
+        float musicVolume = number;
         Debug.Log(number);
         SetMusicMixerVolume(musicVolume);
     }
 
-    public void SetFXMixerVolume(int vol)
+    public void SetFXMixerVolume(float vol)
     {
-       // mixer.SetFloat("SFXVolume", volumeValues[vol]);
+        mixer.SetFloat("SFXVolume",vol);
+        
+    }
+
+    public void SetGlobalFXMixerVolumeForLevelFadeInValue(float value)
+    {
+        globalSFXMixerVolume = value;
     }
 }

@@ -9,8 +9,6 @@ public class Settings : MonoBehaviour
 {
     public TextMeshProUGUI back = null;
     public TextMeshProUGUI sensitivityNum = null;
-    public TextMeshProUGUI musicVolNum = null;
-    public TextMeshProUGUI sfxVolNum = null;
 
     public Toggle dyslexicToggle = null;
     public Toggle sprintToggle = null;
@@ -83,54 +81,17 @@ public class Settings : MonoBehaviour
         sensitivityNum.text = sensitivity.ToString();
     }
 
-    #region MUSIC VOLUME
-    public void SetMusicVolume(bool _increase)
+    public void SetMusicLevel(float sliderValue)
     {
-        if (_increase)
-        {
-            if (musicVolume < 10)
-            {
-                musicVolume++;
-                Global_Settings_Manager.instance.SetMusicVolume(musicVolume);
-               
-            }
-        }
-        else
-        {
-            if (musicVolume > 0)
-            {
-                musicVolume--;
-                Global_Settings_Manager.instance.SetMusicVolume(musicVolume);
-
-            }
-        }
-
-        musicVolNum.text = musicVolume.ToString();
+        float mixerVolume = Mathf.Log10(sliderValue) * 20;
+        Global_Settings_Manager.instance.SetMusicVolume(mixerVolume);
+        Global_Settings_Manager.instance.SetGlobalFXMixerVolumeForLevelFadeInValue(sliderValue);
     }
-    #endregion
 
-    public void SetSFXVolume(bool _increase)
+    public void SetSFXLevel(float sliderValue)
     {
-        if (_increase)
-        {
-            if (sfxVolume < 10)
-            {
-                sfxVolume++;
-                Global_Settings_Manager.instance.SetFXVolume(sfxVolume);
-
-            }
-        }
-        else
-        {
-            if (sfxVolume > 0)
-            {
-                sfxVolume--;
-                Global_Settings_Manager.instance.SetFXVolume(sfxVolume);
-
-            }
-        }
-
-        sfxVolNum.text = sfxVolume.ToString();
+        float mixerVolume = Mathf.Log10(sliderValue) * 20;
+        Global_Settings_Manager.instance.SetFXVolume(mixerVolume);
     }
 
     public void SetSprintToggle(bool toggled)
