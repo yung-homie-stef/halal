@@ -22,6 +22,10 @@ public class Settings : MonoBehaviour
 
     private GameObject lastOpenedScreen = null;
 
+    public AudioClip[] menuSelectClips;
+    public AudioClip[] menuClickClips;
+    public AudioSource audioSource = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,13 +89,14 @@ public class Settings : MonoBehaviour
     {
         float mixerVolume = Mathf.Log10(sliderValue) * 20;
         Global_Settings_Manager.instance.SetMusicVolume(mixerVolume);
-        Global_Settings_Manager.instance.SetGlobalFXMixerVolumeForLevelFadeInValue(sliderValue);
+        
     }
 
     public void SetSFXLevel(float sliderValue)
     {
         float mixerVolume = Mathf.Log10(sliderValue) * 20;
         Global_Settings_Manager.instance.SetFXVolume(mixerVolume);
+        Global_Settings_Manager.instance.SetGlobalFXMixerVolumeForLevelFadeInValue(sliderValue);
     }
 
     public void SetSprintToggle(bool toggled)
@@ -116,5 +121,15 @@ public class Settings : MonoBehaviour
     {
         lastOpenedScreen.SetActive(true);
         this.gameObject.SetActive(false);
+    }
+
+    public void OnMenuItemSelected()
+    {
+        audioSource.PlayOneShot(menuSelectClips[Random.Range(0, menuSelectClips.Length)]);
+    }
+
+    public void OnMenuItemClicked()
+    {
+        audioSource.PlayOneShot(menuClickClips[Random.Range(0, menuClickClips.Length)]);
     }
 }

@@ -11,6 +11,15 @@ public class Level_Load_Interaction : Interaction
     public AudioMixer sfxMixer;
     public float fadeDuration = 0.0f;
 
+    public AudioClip[] interactSounds;
+
+    private AudioSource _audioSource;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
     public override void Interact()
     {
         StartCoroutine(LoadNextLevel(5.0f));
@@ -18,6 +27,7 @@ public class Level_Load_Interaction : Interaction
         gameObject.tag = "Untagged";
         StartCoroutine(AudioSourceFade.StartFade(musicAudioSource, fadeDuration, 0));
         StartCoroutine(MixerFade.StartFade(sfxMixer, "SFXVolume", fadeDuration, 0.0001f));
+        _audioSource.PlayOneShot(interactSounds[Random.Range(0, interactSounds.Length)]);
     }
 
     private IEnumerator LoadNextLevel(float waitTime)

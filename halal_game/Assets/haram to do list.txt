@@ -50,7 +50,6 @@ Bugs - In Progress
 
 ULTIMATE FINAL TO-DO LIST
 ---------------------
-- Sound effects for interacting with items
 - Dress up suburbia level
 - Transition graphic
 - Finish soundtrack

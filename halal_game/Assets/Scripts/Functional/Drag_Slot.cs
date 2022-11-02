@@ -13,6 +13,8 @@ public class Drag_Slot : MonoBehaviour, IDropHandler
     public UnityEvent OnRitualCardComplete;
     public CanvasGroup canvasGroup;
 
+    public Prayer_Card_Canvas cardCanvasScript;
+
     public void OnDrop(PointerEventData eventData)
     {
        if (eventData.pointerDrag != null)
@@ -23,6 +25,7 @@ public class Drag_Slot : MonoBehaviour, IDropHandler
                 snappedObjectNum++;
                 eventData.pointerDrag.GetComponent<Drag_Drop>().enabled = false;
                 canvasGroup.alpha = 1;
+                cardCanvasScript.OnMenuItemSelected();
 
                 if (snappedObjectNum == 3)
                 {

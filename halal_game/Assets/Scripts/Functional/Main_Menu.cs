@@ -11,6 +11,10 @@ public class Main_Menu : MonoBehaviour
     public TextMeshProUGUI settings = null;
     public TextMeshProUGUI quit = null;
 
+    public AudioClip[] menuSelectClips;
+    public AudioClip[] menuClickClips;
+    public AudioSource audioSource = null;
+
     public GameObject startMenu = null;
     public Image blowfly = null;
 
@@ -60,5 +64,15 @@ public class Main_Menu : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         blowfly.enabled = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void OnMenuItemSelected()
+    {
+        audioSource.PlayOneShot(menuSelectClips[Random.Range(0, menuSelectClips.Length)]);
+    }
+
+    public void OnMenuItemClicked()
+    {
+        audioSource.PlayOneShot(menuClickClips[Random.Range(0, menuClickClips.Length)]);
     }
 }
