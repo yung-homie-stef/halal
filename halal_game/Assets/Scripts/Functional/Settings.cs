@@ -119,6 +119,7 @@ public class Settings : MonoBehaviour
     }
     public void GoBack()
     {
+        back.alignment = TextAlignmentOptions.Center;
         lastOpenedScreen.SetActive(true);
         this.gameObject.SetActive(false);
     }

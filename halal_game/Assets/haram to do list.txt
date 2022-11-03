@@ -32,7 +32,6 @@ Final ("Pork Belly") - Writing Complete
 
 SOUND FX NEEDED
 ---------------------
-
 Beach - SOUNDS COMPLETED
 Church - SOUNDS COMPLETED
 Chickens - SOUNDS COMPLETED
@@ -46,6 +45,11 @@ Final - SOUNDS COMPLETED
 Bugs - In Progress
 ---------------------
 
+SOUNDTRACK
+---------------------
+Church - MUSIC COMPLETED
+Suburbia - MUSIC COMPLETED
+Beach - MUSIC COMPLETED
 
 
 ULTIMATE FINAL TO-DO LIST
