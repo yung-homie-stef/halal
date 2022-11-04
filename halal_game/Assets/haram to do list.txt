@@ -12,7 +12,7 @@ Valley ("Child of God") - Asset Complete
 Chickens ("The Chicken Tree") - Asset Complete
 Final ("Meat Solstice") - Asset Complete
 
-Suburb ("Indian Summer") - Furnish houses properly, add church decor, create new object to interact with after level completion. blood VFX
+Suburb ("Indian Summer") - Furnish houses properly, add church decor, leaf piles, house collision, destructible doors,  blood VFX
 
 
 
@@ -54,7 +54,6 @@ Beach - MUSIC COMPLETED
 
 ULTIMATE FINAL TO-DO LIST
 ---------------------
-- Dress up suburbia level
 - Transition graphic
 - Finish soundtrack
 - Optimization (occlusion and batching)
