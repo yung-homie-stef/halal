@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab3a651e19f89f34182e5c8bd671f95f
+guid: ca962cda834f54145b45aeab8ed8e44d
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -12,28 +12,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: house_brick
-    second: {fileID: 2100000, guid: 18bb1869dff8ebb4e9c1cbcb65f3275e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: house_ceiling
-    second: {fileID: 2100000, guid: 6ebe4bf0651deaa4babf90ad8811caed, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: house_floor
-    second: {fileID: 2100000, guid: 01fdad6bd46245140a2d6fab71da82d2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: house_walls
-    second: {fileID: 2100000, guid: dc446c2e84d53f24ea5e4164eadc9c53, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lattice
-    second: {fileID: 2100000, guid: bf5d13136dc0ec241992f4f36fe031cc, type: 2}
+      name: window_glass
+    second: {fileID: 2100000, guid: ba3196bb04e72574ba76ea8c6c727df4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

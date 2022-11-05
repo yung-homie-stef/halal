@@ -6,16 +6,23 @@ public class Destructible : MonoBehaviour
 {
     [SerializeField]
     private GameObject _destroyedObject;
+    [SerializeField]
+    private GameObject _intactObject;
 
     [SerializeField]
     private float _deathForceMultiplier = 0.0f;
     private Rigidbody[] _destructibleRigidBodies = null;
+    private BoxCollider _boxCollider = null;
 
+    private void Start()
+    {
+        _boxCollider = gameObject.GetComponent<BoxCollider>();
+    }
 
     public void DestroyMesh(Vector3 point = default(Vector3), Vector3 direction = default(Vector3))
     {
-        Instantiate(_destroyedObject, transform.position, transform.rotation);
         _destructibleRigidBodies = _destroyedObject.GetComponentsInChildren<Rigidbody>();
+        _destroyedObject.SetActive(true);
 
         foreach (Rigidbody body in _destructibleRigidBodies)
         {
@@ -25,6 +32,8 @@ public class Destructible : MonoBehaviour
             body.AddForceAtPosition((direction * deathForceMultiplier), point, ForceMode.Impulse);
         }
 
-        Destroy(gameObject);
+        _intactObject.SetActive(false);
+        _boxCollider.enabled = false;
+        //Destroy(gameObject);
     }
 }
