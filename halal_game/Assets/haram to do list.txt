@@ -12,7 +12,7 @@ Valley ("Child of God") - Asset Complete
 Chickens ("The Chicken Tree") - Asset Complete
 Final ("Meat Solstice") - Asset Complete
 
-Suburb ("Indian Summer") - Furnish houses properly, add church decor, blood VFX
+Suburb ("Indian Summer") - Furnish houses properly, blood VFX
 
 
 
