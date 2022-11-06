@@ -27,6 +27,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: house_leaves_1
+    second: {fileID: 2100000, guid: 4c8afbc6cd78f2a4eb5de69d97d0c324, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: house_leaves_2
+    second: {fileID: 2100000, guid: 4f9486df4b27f734a9d71014ddedf190, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: house_leaves_3
+    second: {fileID: 2100000, guid: 80ab399101da6b34bb8cfb0472163beb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: house_walls
     second: {fileID: 2100000, guid: dc446c2e84d53f24ea5e4164eadc9c53, type: 2}
   - first:
