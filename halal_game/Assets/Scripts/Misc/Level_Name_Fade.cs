@@ -10,12 +10,13 @@ public class Level_Name_Fade : MonoBehaviour
     public AudioMixer SFXaudioMixer;
     public AudioSource musicAudioSource;
     public float fadeDuration = 0.0f;
+    public float maxVolume = 0.0f;
     
 
     void Start()
     {
         //StartCoroutine(MixerFade.StartFade(SFXaudioMixer, "SFXVolume", fadeDuration, 0.0f));
-        StartCoroutine(AudioSourceFade.StartFade(musicAudioSource, fadeDuration, 1));
+        StartCoroutine(AudioSourceFade.StartFade(musicAudioSource, fadeDuration, maxVolume));
     }
 
     public void BeginControllerEnabling()

@@ -1,6 +1,6 @@
 
 
-TO-DO // ASSETS
+TO-DO // ASSETS (MODELLING DONE)
 ---------------------
 Church ("Haram") - Asset Complete 
 Beach ("Cold Fish") - Asset Complete 
@@ -29,7 +29,7 @@ Valley ("Child of God") - Writing Complete
 Final ("Pork Belly") - Writing Complete
 
 
-SOUND FX NEEDED
+TO-DO // SOUND FX NEEDED
 ---------------------
 Beach - SOUNDS COMPLETED
 Church - SOUNDS COMPLETED
@@ -49,6 +49,20 @@ SOUNDTRACK
 Church - MUSIC COMPLETED
 Suburbia - MUSIC COMPLETED
 Beach - MUSIC COMPLETED
+
+
+TO-DO // OPTIMIZATION
+---------------------
+Church - OPTIMIZATION COMPLETED (95 FPS)
+Chickens - OPTIMIZATION COMPLETED (75 FPS)
+Beach - OPTIMIZATION COMPLETED (92 FPS)
+Suburbia - OPTIMIZATION COMPLETED (72 FPS)
+Shit - OPTIMIZATION COMPLETED (97 FPS)
+Valley - OPTIMIZATION COMPLETED (66 FPS)
+Snow - OPTIMIZATION COMPLETED (60 FPS)
+Bugs - OPTIMIZATION COMPLETED (97 FPS)
+Calvary - 
+Final - 
 
 
 ULTIMATE FINAL TO-DO LIST

@@ -9,14 +9,18 @@ public class Destructible : MonoBehaviour
     [SerializeField]
     private GameObject _intactObject;
 
+    public AudioClip[] breakingSounds;
+
     [SerializeField]
     private float _deathForceMultiplier = 0.0f;
     private Rigidbody[] _destructibleRigidBodies = null;
     private BoxCollider _boxCollider = null;
+    private AudioSource _audioSource = null;
 
     private void Start()
     {
         _boxCollider = gameObject.GetComponent<BoxCollider>();
+        _audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     public void DestroyMesh(Vector3 point = default(Vector3), Vector3 direction = default(Vector3))
@@ -34,6 +38,7 @@ public class Destructible : MonoBehaviour
 
         _intactObject.SetActive(false);
         _boxCollider.enabled = false;
+        _audioSource.PlayOneShot(breakingSounds[Random.Range(0, breakingSounds.Length)]);
         //Destroy(gameObject);
     }
 }
