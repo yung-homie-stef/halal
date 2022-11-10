@@ -51,7 +51,7 @@ Suburbia - MUSIC COMPLETED
 Beach - MUSIC COMPLETED
 
 
-TO-DO // OPTIMIZATION
+TO-DO // OPTIMIZATION (OPTIMIZING DONE)
 ---------------------
 Church - OPTIMIZATION COMPLETED (95 FPS)
 Chickens - OPTIMIZATION COMPLETED (75 FPS)
@@ -61,15 +61,14 @@ Shit - OPTIMIZATION COMPLETED (97 FPS)
 Valley - OPTIMIZATION COMPLETED (66 FPS)
 Snow - OPTIMIZATION COMPLETED (60 FPS)
 Bugs - OPTIMIZATION COMPLETED (97 FPS)
-Calvary - 
-Final - 
+Calvary - OPTIMIZATION COMPLETED (70 FPS)
+Final - OPTIMIZATION COMPLETED (62 FPS)
 
 
 ULTIMATE FINAL TO-DO LIST
 ---------------------
 - Transition graphic
 - Finish soundtrack
-- Optimization (occlusion and batching)
 - Testing
 
 
