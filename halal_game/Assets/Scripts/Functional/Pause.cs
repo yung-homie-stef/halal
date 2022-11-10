@@ -68,6 +68,7 @@ public class Pause : MonoBehaviour
     {
         Global_Settings_Manager.instance.settingsMenu.SetActive(true);
         Global_Settings_Manager.instance.settingsMenu.GetComponent<Settings>().SetLastOpenedMenu(this.gameObject);
+        Global_Settings_Manager.instance.isInSettings = true;
         RevertText();
         gameObject.SetActive(false);
     }

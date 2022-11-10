@@ -11,6 +11,7 @@ public class Global_Settings_Manager : MonoBehaviour
     public AudioMixer mixer;
 
     public bool isPaused = false;
+    public bool isInSettings = false;
     public float globalSFXMixerVolume = 1.0f;
 
     public static Global_Settings_Manager instance = null;

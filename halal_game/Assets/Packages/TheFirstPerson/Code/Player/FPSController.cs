@@ -366,9 +366,18 @@ namespace TheFirstPerson
                 }
                 else
                 {
-                    Global_Settings_Manager.instance.pauseMenu.SetActive(false);
-                    Time.timeScale = 1.0f;
-                    Global_Settings_Manager.instance.isPaused = false;
+                    if (!Global_Settings_Manager.instance.isInSettings)
+                    {
+                        Global_Settings_Manager.instance.pauseMenu.SetActive(false);
+                        Time.timeScale = 1.0f;
+                        Global_Settings_Manager.instance.isPaused = false;
+                    }
+                    else
+                    {
+                        Global_Settings_Manager.instance.pauseMenu.SetActive(true);
+                        Global_Settings_Manager.instance.settingsMenu.SetActive(false);
+                        Global_Settings_Manager.instance.isInSettings = false;
+                    }
                 }
 
             }
