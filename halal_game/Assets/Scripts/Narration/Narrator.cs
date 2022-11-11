@@ -89,15 +89,21 @@ public class Narrator : MonoBehaviour
 
                 if (Input.GetMouseButtonDown(0))
                 {
-                    NextLine();
+                    if (!Global_Settings_Manager.instance.isPaused)
+                    {
+                        NextLine();
+                    }
                 }
             }
             else
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    StopAllCoroutines();
-                    textComponent.maxVisibleCharacters = characterCount;
+                    if (!Global_Settings_Manager.instance.isPaused)
+                    {
+                        StopAllCoroutines();
+                        textComponent.maxVisibleCharacters = characterCount;
+                    }
                 }
             }
         }

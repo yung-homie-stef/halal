@@ -40,5 +40,17 @@ public class Wavy_Text : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        StartCoroutine(RemoveWavyText(8.0f));
+        text.gameObject.SetActive(true);
+    }
+
+    private IEnumerator RemoveWavyText(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        text.gameObject.SetActive(false);
+    }
+
 
 }

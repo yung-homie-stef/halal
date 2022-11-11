@@ -14,6 +14,14 @@ public class Narration_Camera_Switch : Narration_Trigger
 
     public Camera_Lerp lerpScript;
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            CheckIfNarratorIsTalking();
+        }
+    }
+
     public override void EndOfDialogueEvent()
     {
         lerpScript.LerpCamera(controllerToDeactivate);
