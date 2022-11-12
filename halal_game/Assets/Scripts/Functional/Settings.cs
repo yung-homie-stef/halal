@@ -108,10 +108,7 @@ public class Settings : MonoBehaviour
     }
     public void SetDyslexicFont(bool fontFlag)
     {
-        if (fontFlag)
-            PlayerPrefs.SetInt("Dyslexic", 2);
-        else
-            PlayerPrefs.SetInt("Dyslexic", 1);
+        Narrator.gameNarrator.SetFontToDyslexic(fontFlag);
     }
     public void SetLastOpenedMenu(GameObject menu)
     {

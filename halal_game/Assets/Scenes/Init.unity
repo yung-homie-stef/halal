@@ -494,6 +494,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: persistent_canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 28312105479089069, guid: 9f966b264f5f5ac40b688bd682838356,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 28312105479089070, guid: 9f966b264f5f5ac40b688bd682838356,
         type: 3}
       propertyPath: textSpeed

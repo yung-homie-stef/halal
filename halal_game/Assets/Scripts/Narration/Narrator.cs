@@ -59,13 +59,6 @@ public class Narrator : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
 
-        if (PlayerPrefs.GetInt("Dyslexic") == 2)
-        {
-            textComponent.font = dyslexicFont;
-        }
-        else
-            textComponent.font = linLibertine;
-
         audioSource = gameObject.GetComponent<AudioSource>();
 
     }
@@ -108,6 +101,20 @@ public class Narrator : MonoBehaviour
             }
         }
         #endregion 
+    }
+
+    public void SetFontToDyslexic(bool isDyslexic)
+    {
+        if (isDyslexic)
+        {
+            textComponent.font = dyslexicFont;
+            textComponent.fontSize = 30;
+        }
+        else
+        {
+            textComponent.font = linLibertine;
+            textComponent.fontSize = 36;
+        }
     }
 
     public void StartDialogue()

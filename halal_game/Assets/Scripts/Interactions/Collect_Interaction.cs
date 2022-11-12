@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class Collect_Interaction : Interaction
 {
     public UnityEvent onAllCollected;
+    public RandomAudioClipPlayer clipPlayer;
 
     [SerializeField]
     private int collectionNumber = 0;
@@ -22,6 +23,7 @@ public class Collect_Interaction : Interaction
     {
         objectsCollected++;
         collectionNumber = objectsCollected;
+        clipPlayer.PlayRandomAudioClip();
 
         if (collectionNumber == 3)
         {

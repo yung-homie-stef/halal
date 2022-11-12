@@ -32,4 +32,9 @@ public class Kill_Count : MonoBehaviour
             isDead = true;
         }
     }
+
+    public int GetKillCount()
+    {
+        return pigCount;
+    }
 }

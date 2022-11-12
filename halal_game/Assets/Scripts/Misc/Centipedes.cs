@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 public class Centipedes : MonoBehaviour
@@ -15,10 +16,12 @@ public class Centipedes : MonoBehaviour
     private bool stillCrawling = true;
 
     public GameObject[] centipedes;
+    public RandomAudioClipPlayer[] centipedeAudioClipPlayers;
 
     public void UnleashCentipede()
     {
         centipedeAnimators[insectIndex].SetTrigger("crawl");
+        centipedeAudioClipPlayers[insectIndex].PlayRandomAudioClip();
 
         if (insectIndex >= 1)
         {
@@ -44,5 +47,6 @@ public class Centipedes : MonoBehaviour
         
         if (stillCrawling)
         centipedeAnimators[index].SetTrigger("crawl");
+        centipedeAudioClipPlayers[index].PlayRandomAudioClip();
     }
 }

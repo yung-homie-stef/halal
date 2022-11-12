@@ -13,6 +13,7 @@ public class Main_Menu : MonoBehaviour
 
     public AudioClip[] menuSelectClips;
     public AudioClip[] menuClickClips;
+    public AudioClip startOinkClip;
     public AudioSource audioSource = null;
 
     public GameObject startMenu = null;
@@ -54,6 +55,7 @@ public class Main_Menu : MonoBehaviour
         Global_Settings_Manager.instance.settingsMenu.SetActive(false);
         blowfly.enabled = true;
         StartCoroutine(LoadIntroSequence(4.0f));
+        audioSource.PlayOneShot(startOinkClip);
     }
     public void QuitGame()
     {

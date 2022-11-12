@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class Shotgun : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class Shotgun : MonoBehaviour
     public AudioClip[] shellSounds;
     public AudioClip[] pumpSounds;
     public AudioClip[] shootSounds;
+
+    public GameObject bloodAttach;
+    public GameObject[] bloodFX;
+    public Light directionalLight;
 
     private Vector3 _bulletPoint;
     private Vector3 _bulletDirection;
@@ -62,6 +67,31 @@ public class Shotgun : MonoBehaviour
 
                     _killScript = _killedObject.transform.gameObject.GetComponent<Kill>();
                     _killScript.CatchHotOnes(_bulletPoint, _bulletDirection);
+
+
+                    //LOGIC FOR SPAWNING BLOOD
+                    int bloodFX_ID = Random.Range(0, bloodFX.Length);
+                    float angle = Mathf.Atan2(_hit.normal.x, _hit.normal.z) * Mathf.Rad2Deg + 180;
+                    var instance = Instantiate(bloodFX[bloodFX_ID], _hit.point, Quaternion.Euler(0, angle + 90, 0));
+                    var settings = instance.GetComponent<BFX_BloodSettings>();
+                    settings.LightIntensityMultiplier = directionalLight.intensity;
+
+                    var nearestBone = GetNearestObject(_hit.transform.root, _hit.point);
+                    if (nearestBone != null)
+                    {
+                        var attachBloodInstance = Instantiate(bloodAttach);
+                        var bloodT = attachBloodInstance.transform;
+                        bloodT.position = _hit.point;
+                        bloodT.localRotation = Quaternion.identity;
+                        bloodT.localScale = Vector3.one * Random.Range(0.75f, 1.2f);
+                        bloodT.LookAt(_hit.point + _hit.normal, _bulletDirection);
+                        bloodT.Rotate(90, 0, 0);
+                        bloodT.transform.parent = nearestBone;
+                        //Destroy(attachBloodInstance, 20);
+                    }
+
+
+
                 }
                 else if (_hit.transform.GetComponent<Destructible>())
                 {
@@ -76,6 +106,31 @@ public class Shotgun : MonoBehaviour
             StartCoroutine(Reload(1.16f));
         }
         
+    }
+
+    Transform GetNearestObject(Transform hit, Vector3 hitPos)
+    {
+        var closestPos = 100f;
+        Transform closestBone = null;
+        var childs = hit.GetComponentsInChildren<Transform>();
+
+        foreach (var child in childs)
+        {
+            var dist = Vector3.Distance(child.position, hitPos);
+            if (dist < closestPos)
+            {
+                closestPos = dist;
+                closestBone = child;
+            }
+        }
+
+        var distRoot = Vector3.Distance(hit.position, hitPos);
+        if (distRoot < closestPos)
+        {
+            closestPos = distRoot;
+            closestBone = hit;
+        }
+        return closestBone;
     }
 
     public void PlayShellShound()
