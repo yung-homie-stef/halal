@@ -15,7 +15,7 @@ public class Level_Name_Fade : MonoBehaviour
 
     void Start()
     {
-        //StartCoroutine(MixerFade.StartFade(SFXaudioMixer, "SFXVolume", fadeDuration, 0.0f));
+        StartCoroutine(MixerFade.StartFade(SFXaudioMixer, "SFXVolume", fadeDuration, Global_Settings_Manager.instance.globalSFXMixerVolume));
         StartCoroutine(AudioSourceFade.StartFade(musicAudioSource, fadeDuration, maxVolume));
     }
 

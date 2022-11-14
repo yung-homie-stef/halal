@@ -41,7 +41,7 @@ Suburbia - SOUNDS COMPLETED
 Valley - SOUNDS COMPLETED
 Final - SOUNDS COMPLETED
 
-Bugs - In Progress
+Bugs - In Progress (vomit, bug hatching, stomach rumbling)
 ---------------------
 
 SOUNDTRACK
@@ -68,9 +68,9 @@ Final - OPTIMIZATION COMPLETED (62 FPS)
 
 ULTIMATE FINAL TO-DO LIST
 ---------------------
-- Transition graphic
-- Finish soundtrack
-- Testing
+- Transition graphic (WIP)
+- Finish soundtrack (WIP)
+- Testing (WIP)
 
 
 

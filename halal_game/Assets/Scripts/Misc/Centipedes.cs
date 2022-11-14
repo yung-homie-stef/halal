@@ -17,6 +17,7 @@ public class Centipedes : MonoBehaviour
 
     public GameObject[] centipedes;
     public RandomAudioClipPlayer[] centipedeAudioClipPlayers;
+    public bool triggeredVomitYet = false;
 
     public void UnleashCentipede()
     {
@@ -38,7 +39,9 @@ public class Centipedes : MonoBehaviour
 
     public void InvokeCrawl(int index)
     {
+        if (!triggeredVomitYet)
         StartCoroutine(RestartCrawl(index, crawlTimerIntervals[timerIndex]));
+        
     }
 
     private IEnumerator RestartCrawl(int index, float waitTime)
@@ -48,5 +51,12 @@ public class Centipedes : MonoBehaviour
         if (stillCrawling)
         centipedeAnimators[index].SetTrigger("crawl");
         centipedeAudioClipPlayers[index].PlayRandomAudioClip();
+        
     }
+
+    public void TriggeredVomit()
+    {
+        triggeredVomitYet = true;
+    }
+
 }
