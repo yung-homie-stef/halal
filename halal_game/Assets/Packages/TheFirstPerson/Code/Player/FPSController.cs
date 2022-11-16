@@ -261,6 +261,7 @@ namespace TheFirstPerson
 
         TFPInfo controllerInfo;
 
+
         void Start()
         {
             controller = GetComponent<CharacterController>();
@@ -356,12 +357,17 @@ namespace TheFirstPerson
             }
             ExecuteExtension(ExtFunc.PostUpdate);
 
+            // PAUSE LOGIC
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (!Global_Settings_Manager.instance.isPaused)
                 {
                     Global_Settings_Manager.instance.pauseMenu.SetActive(true);
                     Time.timeScale = 0.0f;
+
+                    AudioListener.pause = true;
+
                     Global_Settings_Manager.instance.isPaused = true;
                 }
                 else
@@ -370,6 +376,7 @@ namespace TheFirstPerson
                     {
                         Global_Settings_Manager.instance.pauseMenu.SetActive(false);
                         Time.timeScale = 1.0f;
+                        AudioListener.pause = false;
                         Global_Settings_Manager.instance.isPaused = false;
                     }
                     else

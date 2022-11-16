@@ -50,6 +50,7 @@ Church - MUSIC COMPLETED
 Suburbia - MUSIC COMPLETED
 Beach - MUSIC COMPLETED
 Chickens - MUSIC COMPLETED
+Snow -	MUSIC COMPLETED
 
 
 TO-DO // OPTIMIZATION (OPTIMIZING DONE)
@@ -68,7 +69,6 @@ Final - OPTIMIZATION COMPLETED (62 FPS)
 
 ULTIMATE FINAL TO-DO LIST
 ---------------------
-- Transition graphic (WIP)
 - Finish soundtrack (WIP)
 - Testing (WIP)
 

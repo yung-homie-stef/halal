@@ -99,6 +99,7 @@ public class Pause : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1.0f;
+        AudioListener.pause = false;
         gameObject.SetActive(false);
     }
 }

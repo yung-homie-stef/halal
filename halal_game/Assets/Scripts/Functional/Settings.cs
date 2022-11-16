@@ -54,6 +54,8 @@ public class Settings : MonoBehaviour
             sprintToggle.isOn = true;
         else
             sprintToggle.isOn = false;
+
+        audioSource.ignoreListenerPause = true;
     }
     public void BackSelected()
     {

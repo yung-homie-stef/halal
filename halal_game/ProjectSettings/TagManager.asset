@@ -25,7 +25,7 @@ TagManager:
   - Desert_3
   - PlayerCollisionOnly
   - Special Collision
-  - 
+  - IgnorePlayerCollision
   - 
   - 
   - 
