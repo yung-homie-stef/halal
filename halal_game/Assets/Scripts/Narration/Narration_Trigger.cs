@@ -35,8 +35,6 @@ public abstract class Narration_Trigger : MonoBehaviour
             Narrator.gameNarrator.lines[i] = sentences[i];
         }
 
-        OnDialogueComplete.Invoke();
-
         Narrator.gameNarrator.StartDialogue();
     }
 

@@ -26,8 +26,6 @@ public class Rotation_Lerp : MonoBehaviour
     {
         if (hasTurned)
         {
-
-
             objectToLerp.transform.rotation = Quaternion.Lerp(originalRotation, newQuaternion, timeCount);
             objectToLerp.transform.position = Vector3.Lerp(objectToLerp.transform.position, newPosition, 2 * Time.deltaTime);
             timeCount = timeCount + Time.deltaTime;
@@ -37,7 +35,7 @@ public class Rotation_Lerp : MonoBehaviour
     public void BeginLerping()
     {
         originalRotation = objectToLerp.transform.rotation;
-        hasTurned = true;
         newPosition = objectToLerp.transform.position + vectorAddition;
+        hasTurned = true;
     }
 }

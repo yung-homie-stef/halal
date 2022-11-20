@@ -6,6 +6,12 @@ using TMPro;
 public class Wavy_Text : MonoBehaviour
 {
     public TMP_Text text;
+    private BoxCollider _boxCollider;
+
+    private void Start()
+    {
+        _boxCollider = gameObject.GetComponent<BoxCollider>();
+    }
 
 
     // Update is called once per frame
@@ -44,6 +50,7 @@ public class Wavy_Text : MonoBehaviour
     {
         StartCoroutine(RemoveWavyText(8.0f));
         text.gameObject.SetActive(true);
+        _boxCollider.enabled = false;
     }
 
     private IEnumerator RemoveWavyText(float waitTime)

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class Delayed_Level_Load : MonoBehaviour
@@ -9,6 +10,10 @@ public class Delayed_Level_Load : MonoBehaviour
     public float loadDelayTime = 0;
     public AudioClip[] interactSounds;
     public Animator transitionAnimator = null;
+
+    public AudioSource musicAudioSource;
+    public AudioMixer sfxMixer;
+    public float fadeDuration = 0.0f;
 
     private AudioSource _audioSource;
 
@@ -20,8 +25,8 @@ public class Delayed_Level_Load : MonoBehaviour
     public void BeginLevelLoad()
     {
         StartCoroutine(LoadNextLevel(loadDelayTime));
-        StartCoroutine(PlayLevelLoadRiser(3.0f));
-        StartCoroutine(PlayTransitionGraphic(5.0f));
+        StartCoroutine(PlayLevelLoadRiser(7.0f));
+        StartCoroutine(PlayTransitionGraphic(10.0f));
     }
 
     private IEnumerator LoadNextLevel(float waitTime)
@@ -34,6 +39,8 @@ public class Delayed_Level_Load : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         _audioSource.PlayOneShot(interactSounds[Random.Range(0, interactSounds.Length)]);
+        StartCoroutine(AudioSourceFade.StartFade(musicAudioSource, fadeDuration, 0));
+        StartCoroutine(MixerFade.StartFade(sfxMixer, "SFXVolume", fadeDuration, 0.0001f));
     }
 
     private IEnumerator PlayTransitionGraphic(float waitTime)
