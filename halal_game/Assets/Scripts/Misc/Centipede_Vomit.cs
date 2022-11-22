@@ -5,6 +5,7 @@ using UnityEngine;
 public class Centipede_Vomit : MonoBehaviour
 {
     public AudioSource centipedeAudioSource;
+    public AudioSource hogAudioSource;
     public ParticleSystem vomitParticle;
 
     public void PlayCentipedeIdleSound()
@@ -15,5 +16,6 @@ public class Centipede_Vomit : MonoBehaviour
     public void Vomit()
     {
         vomitParticle.Play();
+        hogAudioSource.Play();
     }
 }

@@ -42,6 +42,6 @@ public class Level_Load_Interaction : Interaction
     private IEnumerator LoadNextLevel(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
     }
 }
