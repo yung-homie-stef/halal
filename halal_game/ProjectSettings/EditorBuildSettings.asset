@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Asset Complete/Church.unity
     guid: 8e9c68eeddc4fc142b09f757d42fcd5a
   - enabled: 1
+    path: Assets/Scenes/Levels/Asset Complete/Valley.unity
+    guid: d3c0dbba441de6548aadfb462d2457f5
+  - enabled: 1
     path: Assets/Scenes/Levels/Asset Complete/Chickens.unity
     guid: 9b80948e2f33862438658659d7b4ffb5
   - enabled: 1
@@ -29,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Asset Complete/Calvary.unity
     guid: 10688c57083b5eb478071729cb76aaf5
-  - enabled: 1
-    path: Assets/Scenes/Levels/Asset Complete/Valley.unity
-    guid: d3c0dbba441de6548aadfb462d2457f5
   - enabled: 1
     path: Assets/Scenes/Levels/Asset Complete/Snow.unity
     guid: 82ad38b7ecf835e4bb686ac31ba7316e

@@ -4,6 +4,7 @@ using UnityEngine;
 using TheFirstPerson;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Settings : MonoBehaviour
 {
@@ -104,9 +105,24 @@ public class Settings : MonoBehaviour
     public void SetSprintToggle(bool toggled)
     {
         if (toggled)
-            PlayerPrefs.SetInt("SprintToggle", 2);
+        {
+            Global_Settings_Manager.instance.sprintToggled = true;
+            if (SceneManager.GetActiveScene().buildIndex >= 2)
+            {
+                FPSController potentialPlayer = FindObjectOfType<FPSController>();
+                potentialPlayer.sprintToggleStyle = true;
+            }
+        }
         else
-            PlayerPrefs.SetInt("SprintToggle", 1);
+        {
+            Global_Settings_Manager.instance.sprintToggled = false;
+            if (SceneManager.GetActiveScene().buildIndex >= 2)
+            {
+                FPSController potentialPlayer = FindObjectOfType<FPSController>();
+                potentialPlayer.sprintToggleStyle = false;
+            }
+        }
+
     }
     public void SetDyslexicFont(bool fontFlag)
     {

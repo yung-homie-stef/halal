@@ -312,12 +312,7 @@ namespace TheFirstPerson
 
             sensitivity = PlayerPrefs.GetInt("Sensitivity");
 
-            if (PlayerPrefs.GetInt("SprintToggle") == 2)
-            {
-                sprintToggleStyle = true;
-            }
-            else
-                sprintToggleStyle = false;
+            sprintToggleStyle = Global_Settings_Manager.instance.sprintToggled;
 
         }
 

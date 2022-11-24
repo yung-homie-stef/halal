@@ -12,6 +12,7 @@ public class Global_Settings_Manager : MonoBehaviour
 
     public bool isPaused = false;
     public bool isInSettings = false;
+    public bool sprintToggled = false;
     public float globalSFXMixerVolume = 1.0f;
 
     public static Global_Settings_Manager instance = null;
