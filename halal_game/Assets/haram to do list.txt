@@ -70,7 +70,14 @@ Final - OPTIMIZATION COMPLETED (62 FPS)
 ULTIMATE FINAL TO-DO LIST
 ---------------------
 - Finish soundtrack (WIP)
-- Testing (WIP)
+
+- Polish Levels:
+	Beach
+	Calvary
+	Final
+	Suburbia
+	Valley
+
 
 
 

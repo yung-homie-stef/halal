@@ -19,5 +19,6 @@ public class Narration_Tag_Change : Narration_Trigger
     {
         OnDialogueComplete.Invoke();
         objectToInteractWith.gameObject.tag = newTag;
+        Destroy(gameObject);
     }
 }
